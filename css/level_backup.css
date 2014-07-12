@@ -1,0 +1,19 @@
+.pricing_level .platinum{
+    background-color: #e5e4e2;
+    border-bottom: 3px solid #f1f1ef;
+}
+
+.pricing_level .gold{
+    background-color: #ffd700;
+    border-bottom: 3px solid #ccac00;
+}
+
+.pricing_level .silver{
+    background-color: #c0c0c0;
+    border-bottom: 3px solid #e6e6e6 ;
+}
+
+.pricing_level .bronze{
+    background-color: #cd7f32;
+    border-bottom: 3px solid #dca570;
+}

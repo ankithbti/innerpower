@@ -1,7 +1,7 @@
 <?php
     ob_start();
 	session_start();
-	// $_SESSION['page'] = "HOME" ;
+	$_SESSION['page'] = "ABOUT" ;
   	include('commonHtmlHead.html');
   	// require_once('resources/dbconfig.php');
 ?>
@@ -17,7 +17,7 @@
 
 				<header class="special container">
 					<span class="icon"><img src="images/ip_logo_small.png"/></span>
-					<h2>Unlock the <strong>power</strong> within</h2>
+					<!-- <h2>Unlock the <strong>power</strong> within</h2> -->
 					<p>&#8220;Deep within man dwell those slumbering powers that would astonish him,<br>
 					that he never dreams of possessing;
 					forces that would revolutionize his life if aroused and put into action.&#8221;</p>
@@ -32,11 +32,12 @@
 								<section>
 									<p align="center"><img src="images/ip_logo_big_white.png" alt="" /></p>
 									<header>
-										<h3>About Us</h3>
+										<h2>About Us</h2>
 									</header>
 									<p>Inner Power is an inspiration company, our motto is to awaken the passions, the dreams and aspiration that might lie dormant within us, to unleash that power within us and script a grand success journey in our lives.</p>
+
 									<header>
-										<h3>Our Services</h3>
+										<h2>Our Services</h2>
 									</header>
 									<p>
 										<ul>
@@ -47,18 +48,9 @@
 											<li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="icon fa-users"></span>&nbsp;&nbsp;Forum: You Ask &amp; Our experts Answer!</li>
 										</ul>
 									</p>
-									<header>
-										<h3>Upcoming</h3>
-									</header>
-									<p>
-										<ul>
-											<li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="icon fa-rocket"></span>&nbsp;&nbsp;Positive company culture</li>
-											<li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="icon fa-rocket"></span>&nbsp;&nbsp;Success webinars</li>
-										</ul>
-									</p>
 
 									<header>
-										<h3>Our Product</h3>
+										<h2>Our Product</h2>
 									</header>
 									<p>
 										<ul>

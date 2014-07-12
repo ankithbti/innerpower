@@ -1,0 +1,131 @@
+
+
+.pricing_level ul{
+    list-style: none;
+    font-size: 15px;
+    
+    color: #9095aa;
+    padding: 0px;
+    margin: 0px;
+
+}
+
+
+.pricing_level li{
+border-bottom: 1px solid #494a5a;
+padding: 0px;
+margin: 0px;
+text-align: center;
+height: 52px;
+line-height: 52px;
+}
+
+.pricing_level .whole{
+    display: inline-block;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+
+
+.pricing_level .type{
+    width: 250px;
+    border-radius: 5px 5px 0px 0px;
+    background-color: #eac80d;
+    height: 62px;
+    border-bottom: 3px solid #bfa30c;
+
+}
+
+.pricing_level .type p{
+    
+    font-weight: 800;
+    font-size: 29px;
+    text-transform: uppercase;
+    color: white;
+    text-align: center;
+    padding-top: 10px;
+
+    
+
+}
+
+.pricing_level .plan{
+    width: 250px;
+    background-color: #2b2937;
+    border-radius: 0px 0px 5px 5px;
+    font-style:condensed;
+    font-size: 50px;
+    color: white;
+    text-align: center;
+}
+.pricing_level .platinum{
+    background-color: #1abc9c;
+    border-bottom: 3px solid #18937b;
+}
+
+.pricing_level .gold{
+    background-color: #5d6a9a;
+    border-bottom: 3px solid #474f6f;
+}
+
+.pricing_level .silver{
+    background-color: #E3536C;
+    border-bottom: 3px solid #EB6379;
+}
+
+.pricing_level .bronze{
+    background-color: #eac80d;
+    border-bottom: 3px solid #bfa30c;
+}
+
+.pricing_level .header{
+    border-bottom: 1px solid #494a5a;
+    padding-bottom: 5px;
+    padding-top: 10px;
+}
+
+.pricing_level .header span{
+    font-size: 20px;
+}
+
+.pricing_level .month{
+    font-size: 14px;
+    color: #575757;
+    padding: 0px;
+    margin: -10px;
+}
+
+.pricing_level .price{
+    height:80px;
+}
+
+.pricing_level .cart{
+  
+  color:white;
+  position: relative;
+  top: 16px;
+  
+}
+
+.pricing_level .bottom{
+  
+  
+}
+
+.pricing_level .content{
+}
+
+.pricing_level .selected{
+  background-color:#1F1B36;
+  margin:0px;
+  padding:0px;
+}
+
+.pricing_level .top{
+  margin-top:35px;
+}
+
+.pricing_level .nodisplay{
+  opacity: 0.1;
+}
