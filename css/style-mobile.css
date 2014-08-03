@@ -163,3 +163,29 @@
 	#footer {
 		padding: 3em 1.5em;
 	}
+
+	.label {
+		padding:5px 10px; 
+		background-color:#1abc9c; 
+		color:#f1f1f1;
+		margin: 0px 5px;
+	}
+	.label-red {
+		padding:5px 10px; 
+		background-color:#E3536C;
+		color:#f1f1f1;
+		margin: 0px 5px;
+	}
+	.label-blue {
+		padding:5px 10px; 
+		background-color:#5d6a9a;
+		color:#f1f1f1;
+		margin: 0px 5px;
+	}
+	.label-yellow {
+		padding:5px 10px; 
+		background-color:#eac80d;
+		color:#f1f1f1;
+		margin: 0px 5px;
+	}
+

@@ -1,6 +1,6 @@
 RewriteEngine on
-RewriteCond %{HTTP_HOST} ^innerpowerclub.com$
-RewriteRule ^(.*)$ http://www.innerpowerclub.com/ [R=301]
+RewriteCond %{HTTP_HOST} ^innerpowermentors.com$
+RewriteRule ^(.*)$ http://www.innerpowermentors.com/ [R=301]
 
 #DirectoryIndex start1.php
 DirectoryIndex index.php

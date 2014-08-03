@@ -3,214 +3,217 @@
 	session_start();
 	$_SESSION['page'] = "HOME" ;
   	include('commonHtmlHead.html');
-  	// require_once('resources/dbconfig.php');
+
 ?>
 	<body class="index loading">
-	
+
+		<div id="showAlways" style="padding:0px;margin:0px;position: fixed ; bottom:0px; right:0px; z-index:5000;">
+			<!-- <a href="index.php#askQuery" class="scrolly"><img style="width:80%;" src="images/post_your_query.png" /></a> -->
+			<a href="postQuery.php" style="padding:5px 10px; background-color:rgba(0,0,0,1);color:#f1f1f1;">Post your queries&nbsp;&nbsp;<span class="icon fa-question-circle"></span></a>
+		</div>
+
 		<!-- Header -->
 			<?php
 			  include('commonPageAltHead.php');
 			?>
 
 		<!-- Banner -->		
-			<section id="banner">
-				
-				<!--
-					".inner" is set up as an inline-block so it automatically expands
-					in both directions to fit whatever's inside it. This means it won't
-					automatically wrap lines, so be sure to use line breaks where
-					appropriate (<br />).
-				-->
-				<div class="inner">
-					
-					<header>
-						<h2>INNER POWER</h2>
-					</header>
-					<p><strong>Unlock the power within</strong>
-					<br />Holiday Inn Resort, Goa
-					<br />2014, Sept 26<sup>th</sup> - 28<sup>th</sup>
-					<footer>
-						<ul class="buttons vertical">
-							<li><a href="#main" class="button fit scrolly">Tell Me More</a></li>
-						</ul>
-					</footer>
-				
+			<section id="banner" style="padding-bottom:10px;padding-top:10px;">
+				<div class="wrapper container" style="padding-bottom:10px;margin-bottom:10px;">
+					<div class="row">
+						<div class="8u bannerWithTransparency" align="left" style="text-align: justify;">
+							<h3 style="padding-top:20px;">We are: <strong><?php echo COMPANY_NAME ; ?></strong></h3>
+							<p>
+								We are a training, coaching and mentoring company with a belief to tap into the power that lies within us to achieve our peak potential.
+								And we are associated with world class mentors, coaches and leaders.
+								<br>
+								We believe in the importance of leadership in today’s constantly evolving <u>business landscape</u> to overcome our internal limitations and blocks to accelerate success.
+							</p>
+						</div>
+						<div class="4u" align="center">
+							<p>
+								<a href="event_ip_utpw.php" class="button">Inner Power:<br>Leadership for <br>Changing Times</a>
+							</p>
+							<p>
+								<a href="sponsors.php" class="button">Become Sponsor</a>
+							</p>
+							<p>
+								<a href="ourSponsors.php" class="button">Our Sponsors</a>
+							</p>
+						</div>
+					</div>
+
 				</div>
 				
 			</section>
+
+			<div class="sectionSegregation" align="center">
+				<div class="container">
+					<div class="row half">
+					<div class="1u">
+						<h2></h2>
+					</div>
+					<div class="10u">
+								<h3>Upcoming event:&nbsp;&nbsp;<strong><?php echo EVENT_NAME ; ?></strong></h3>
+							</div>
+					<div class="1u">
+						<h2></h2>
+					</div>
+				</div>
+				</div>
+				
+			</div>
 		
-		<!-- Main -->
-			<article id="main">
+		
+			
 
-				<header class="special container">
-					<span class="icon"><img src="images/ip_logo_small.png"/></span>
-					<h2><strong>INNER POWER</strong><br>is organizing a<br>THREE-days event.</h2>
-					<p>It will be comprising of a series of theme based workshop<br>sessions to strengthen the core beliefs of individuals to excel in every aspects of life (professional &amp; personal).</p>
-				</header>
+			<div class="row half">
+				<div class=" 12u withImageBackground">
+					<div class="extraLayer">
+					<h2>IPTS is organizing its 2 days workshop event “Leadership for Changing Times” at Holiday INN- Goa- 26th to 28th Sep.</h2>
+					<!-- <img src="images/bluishbg.png" width="100%" height="50px"/> -->
+					<div class="bluishribbon">
+						<h4><strong>Leading with Passion, Belief &amp; Self-Inspiration</strong></h4>
+					</div>
+					<h2>A workshop to address the need for a leadership mind-set to capture opportunities amidst a rapidly evolving business landscape.</h2>
+					<br>
+					</div>
+				</div>
+			</div>
+
+
+
 					
-				<!-- One -->
-					<section class="wrapper style2 container special-alt">
-						<div class="row half">
-							<div class="8u">
-							
-								<header>
-									<h2>I believe there's an <strong>INNER POWER</strong> that makes winners or losers, and the winner are the ones who really listen to the truth of their hearts.<br>
-									<span class="icon fa-comments"></span>  Sylvester Stallone  <span class="icon fa-comments"></span></h2>
-								</header>
-								<p>The event is an open event for passionate entrepreneurs, visionaries and for those who looking forward to take charge of their lives. Where you will get to meet inspiring speakers and network with passionate minded individuals.</p>
-								<footer>
-									<ul class="buttons">
-										<li><a href="event_ip_utpw.php" class="button">Find Out More</a></li>
-									</ul>
-								</footer>
-							
+			<div class="sectionSegregation" align="center">
+				<div class="container">
+					<div class="row half">
+					<div class="1u">
+						<h2></h2>
+					</div>
+					<div class="10u">
+								<h3><img src="images/ip_log_new.png" style="width:50px;position:relative;top:5px;"/>&nbsp;&nbsp;&nbsp;&nbsp;&amp;&nbsp;&nbsp;
+									<img src="images/elantattva_logo.png" style="width:50px;position:relative;top:5px;"/>&nbsp;&nbsp;&nbsp;&nbsp;
+									&nbsp;&nbsp;&nbsp;&nbsp;Your Success is Our Vision
+								</h3>
 							</div>
-							<div class="4u skel-cell-important">
-							
-								<ul class="feature-icons">
-									<li><span class="icon fa-clock-o"><span class="label">Feature 1</span></span></li>
-									<li><span class="icon fa-group"><span class="label">Feature 2</span></span></li>
-									<li><span class="icon fa-bullseye"><span class="label">Feature 3</span></span></li>
-									<li><span class="icon fa-trophy"><span class="label">Feature 4</span></span></li>
-									<li><span class="icon fa-globe"><span class="label">Feature 5</span></span></li>
-									<li><span class="icon fa-gift"><span class="label">Feature 6</span></span></li>
-								</ul>
-							
-							</div>				
-						</div>
-					</section>
+					<div class="1u">
+						<h2></h2>
+					</div>
+				</div>
+				</div>
+			</div>
 
-				
+			<div class="row half withImageBackgroundEnjoyman">
+				<div class="12u">
+					<div class="wrapBullots">
+						<ul>
+							<li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="icon fa-caret-right"></span>&nbsp;&nbsp;&nbsp;&nbsp;Holistic Leadership</li>
+							<li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="icon fa-caret-right"></span>&nbsp;&nbsp;&nbsp;&nbsp;Inspiring Peak Performance</li>
+							<li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="icon fa-caret-right"></span>&nbsp;&nbsp;&nbsp;&nbsp;Developing positive attitude towards life</li>
+							<li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="icon fa-caret-right"></span>&nbsp;&nbsp;&nbsp;&nbsp;Empowering Vision, Passion and Goals</li>
+							<li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="icon fa-caret-right"></span>&nbsp;&nbsp;&nbsp;&nbsp;Self Leadership</li>
+							<li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="icon fa-caret-right"></span>&nbsp;&nbsp;&nbsp;&nbsp;Employee Engagement</li>
+							<li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="icon fa-caret-right"></span>&nbsp;&nbsp;&nbsp;&nbsp;Success mindset</li>
+							<li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="icon fa-caret-right"></span>&nbsp;&nbsp;&nbsp;&nbsp;Adaptation to change</li>
+							<li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="icon fa-caret-right"></span>&nbsp;&nbsp;&nbsp;&nbsp;Holistic Growth</li>
+							<li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="icon fa-caret-right"></span>&nbsp;&nbsp;&nbsp;&nbsp;Emotional management</li>
+							<li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="icon fa-caret-right"></span>&nbsp;&nbsp;&nbsp;&nbsp;Overcome limited beliefs and strengthen inner belief</li>
+						</ul>
+					</div>
+				</div>
+			</div>
 
-				<!-- Offerings -->
-					<section class="wrapper style1 container special">
-						<header class="major">
-								<h2><strong>OUR OFFERINGS</strong></h2>
+			<div class="sectionSegregation" align="center">
+				<div class="container">
+					<div class="row half">
+					<div class="1u">
+						<h2></h2>
+					</div>
+					<div class="10u">
+								<h3>Our Products</h3>
+							</div>
+					<div class="1u">
+						<h2></h2>
+					</div>
+				</div>
+				</div>
+			</div>
+
+			<section class="wrapper style1 special putImageBG" style="margin:0px;padding:0px;">
+				<div class="row">
+					<div class="3u movedown">
+						<section>
+							<!-- <span class="icon feature fa-check"></span> -->
+							<a href="http://www.elantattva.com/programs_new.php#at_easi101" target="_blank">
+							<img src="images/product1.png" />
+							<header>
+								<h3>Emotional &amp; Social Intelligence 101</h3>
 							</header>
-						<div class="row">
-
-							<div class="4u">
-								
-								<section>
-									<header>
-										<h3>One day workshops</h3>
-									</header>
-									<p>We organize one day workshops on a wide range of topics and themes.
-									These workshops are customizable and can be delivered in corporate organizations and institutions.
-									</p>
-									
-								</section>
-							
-							</div>
-							<div class="4u">
-							
-								<section>
-									<header>
-										<h3>Events</h3>
-									</header>
-									<p>We organize mega training/learning events, wherein we bring world-class coaches, thought leaders, 
-									and expert professionals from various industry segments under one roof.
-									</p>
-									
-								</section>
-							
-							</div>
-							<div class="4u">
-							
-								<section>
-									<header>
-										<h3>Weekend workshops</h3>
-									</header>
-									<p>Our in-house team of experienced trainers and coaches bring you specially designed unique weekend workshops.
-									 Offered both as open workshops as well as exclusive events.
-									</p>
-									<!-- <footer>
-										<ul class="buttons">
-											<li><a href="about_us.php" class="button small">Learn More</a></li>
-										</ul>
-									</footer> -->
-								</section>
-							
-							</div>
-						</div>
-					</section>
-
-				<!-- CTA -->
-					<section id="cta">
+							</a>
+							<!-- <p>Sed tristique purus vitae volutpat ultrices. Aliquam eu elit eget arcu commodo suscipit dolor nec nibh. Proin a ullamcorper elit, et sagittis turpis. Integer ut fermentum.</p> -->
+						</section>
 					
-						<header>
-							<h2><strong>Sponsorship</strong> Opportunities</h2>
-							<p>Make valuable connections within the Inner Power community<br>
-							by becoming a Conference Sponsor and promoting your <br>products &amp; services to this Passionate Community.</p>
-						</header>
-						<footer>
-							<ul class="buttons">
-								<li><a href="sponsors.php" class="button">Know More</a></li>
-							</ul>		
-						</footer>
+					</div>
+					<div class="3u movedown">
+						<section>
+							<a href="http://www.elantattva.com/programs_new.php#at_ig101" target="_blank">
+							<!-- <span class="icon feature fa-check"></span> -->
+							<img src="images/product2.png" />
+							<header>
+								<h3>Goal Setting</h3>
+							</header>
+							</a>
+							<!-- <p>Sed tristique purus vitae volutpat ultrices. Aliquam eu elit eget arcu commodo suscipit dolor nec nibh. Proin a ullamcorper elit, et sagittis turpis. Integer ut fermentum.</p> -->
+						</section>
 					
-					</section>
-				
+					</div>
+					<div class="3u movedown">
+						<section>
+							<a href="http://www.elantattva.com/programs_new.php#at_tm" target="_blank">
+							<!-- <span class="icon feature fa-check"></span> -->
+							<img src="images/product3.png" />
+							<header>
+								<h3>Time Mastery</h3>
+							</header>
+							</a>
+							<!-- <p>Sed tristique purus vitae volutpat ultrices. Aliquam eu elit eget arcu commodo suscipit dolor nec nibh. Proin a ullamcorper elit, et sagittis turpis. Integer ut fermentum.</p> -->
+						</section>
 					
-				<!-- Three -->
-					<section class="wrapper style3 container special">
+					</div>
+					<div class="3u movedown">
+						<section>
+							<a href="event_ip_utpw.php">
+							<!-- <span class="icon feature fa-check"></span> -->
+							<img src="images/product4.png" />
+							<header>
+								<h3>Leadership - DNA</h3>
+							</header>
+							</a>
+							<!-- <p>Sed tristique purus vitae volutpat ultrices. Aliquam eu elit eget arcu commodo suscipit dolor nec nibh. Proin a ullamcorper elit, et sagittis turpis. Integer ut fermentum.</p> -->
+						</section>
 					
-						<header class="major">
-							<h2><strong>SPEAKERS - AN INTRO</strong></h2>
-						</header>
+					</div>
+				</div>
+			</section>
 
-						<div class="row">
-							<div class="4u">
-								<img class="circle" src="images/pavan.png"/>
-							</div>
-							<div class="8u" align="left">
-								<h3><strong>Pavan Bakshi</strong></h3>
-								<p>A Colonel (Veteran), PMP, RCS Certified Executive Coach has a work experience of 30 years and wide expertise in the domain of Operations, Projects, Supply Chain Management, Business Development and Training.</p>
-							</div>
-						</div>
 
-						<div class="row">
-							<div class="8u" align="right">
-								<h3><strong>Jacob Mathewis</strong></h3>
-								<p>An innovative coach &amp; an effective Change Practitioner, with extensive experience in business optimisation and transformational coaching. A Certified Six Sigma Master Black Belt and Lean Practitioner from the US.</p>
+			<div class="sectionSegregation" align="center">
+				<div class="container">
+					<div class="row half">
+					<div class="1u">
+						<h2></h2>
+					</div>
+					<div class="10u">
+								<h3>Be a part of the change</h3>
 							</div>
-							<div class="4u">
-								<img class="circle" src="images/mathew.png"/>
-							</div>
-						</div>
+					<div class="1u">
+						<h2></h2>
+					</div>
+				</div>
+				</div>
+			</div>
 
-						<div class="row">
-							<div class="4u">
-								<img class="circle" src="images/rajagopal.png"/>
-							</div>
-							<div class="8u" align="left">
-								<h3><strong>Jeanne-d’Arc Jabbour Rajagopal</strong></h3>
-								<p>An Entrepreneur, a Pranic Healer, Pranic Healing Instructor and Arhatic Yoga® Practioner. She has a BA in Sociology with Minor in Psychology and MBA in Marketing from the American University in Dubai.</p>
-							</div>
-						</div>
-
-						<div class="row">
-							<div class="8u" align="right">
-								<h3><strong>Shwetha Bhatia</strong></h3>
-								<p>A registered dietician with the Indian Dietetic Association. Shwetha’s academic excellence is superseded by her successful and established clinical practice under the brand name ‘Metamorphosis’.</p>
-							</div>
-							<div class="4u">
-								<img class="circle" src="images/sweta.png"/>
-							</div>
-						</div>
-
-						
-						<footer class="major">
-							<ul class="buttons">
-								<li><a href="speakers.php" class="button">Know More</a></li>
-							</ul>
-						</footer>
-					
-					</section>
-					
-			</article>
-
-		<!-- CTA -->
+			<!-- CTA -->
 			<section id="cta">
 			
 				<header>
@@ -225,6 +228,43 @@
 				</footer>
 			
 			</section>
+
+			<div class="sectionSegregation" align="center">
+				<div class="container">
+					<div class="row half">
+					<div class="1u">
+						<h2></h2>
+					</div>
+					<div class="10u">
+								<h3>Contact Us @</h3>
+							</div>
+					<div class="1u">
+						<h2></h2>
+					</div>
+				</div>
+				</div>
+			</div>
+
+			<div class="container">
+				<div class="row moveDown">
+					<div class="6u contacticons" style="padding:20px 20px;margin-top:50px;">
+						<div align="justify">
+							<ul>
+								<li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="icon fa-facebook-square"></span>&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://www.facebook.com/innerpowermentors" target="_blank">innerpowermentors</a></li>
+								<li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="icon fa-phone-square"></span>&nbsp;&nbsp;&nbsp;&nbsp;+91 87545 39191 <strong>,</strong> +91 99722 97259</li>
+								<li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="icon fa-envelope-o"></span>&nbsp;&nbsp;&nbsp;&nbsp;<a href="mailto:connect@innerpowermentors.com">connect@innerpowermentors.com</a></li>
+								<li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="icon fa-linkedin-square"></span>&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://www.linkedin.com/pub/inner-power-training-solutions/77/456/85b" target="_blank">innerpowermentors</a></li>
+								<li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="icon fa-dribbble"></span>&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://www.innerpowermentors.com/">www.innerpowermentors.com</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="6u"  style="text-align:justify;padding:20px 20px;margin-top:50px;">
+						<h3 style="padding:0px;margin:0px;">The secret to success can be found in your daily agenda. Average people don’t put in the extra work every day to keep growing and changing.</h3>
+						<h3>- John C. Maxwell</h3>
+					</div>
+				</div>
+			</div>
+
 
 		<!-- footer -->
 			<?php

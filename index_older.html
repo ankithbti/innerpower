@@ -1,87 +1,20 @@
-<!DOCTYPE HTML>
-<!--
-	innerpowerclub.com by Fitied
-	Inner Power Event
--->
-<html>
-	<head>
-		<title>Home | Inner Power - Unlock the power within</title>
-		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-		<meta name="description" content="" />
-		<meta name="keywords" content="Inner Power Unlock the power within" />
-		<!--[if lte IE 8]><script src="css/ie/html5shiv.js"></script><![endif]-->
-		<script src="js/jquery.min.js"></script>
-		<script src="js/jquery.dropotron.min.js"></script>
-		<script src="js/skel.min.js"></script>
-		<script src="js/skel-layers.min.js"></script>
-		<script src="js/init.js"></script>
-		<noscript>
-			<link rel="stylesheet" href="css/skel.css" />
-			<link rel="stylesheet" href="css/style.css" />
-			<link rel="stylesheet" href="css/style-noscript.css" />
-		</noscript>
-		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
-		<!--[if lte IE 9]><link rel="stylesheet" href="css/ie/v9.css" /><![endif]-->
-		<link rel="shortcut icon" href="images/favicon.ico">
-	</head>
+<?php
+    ob_start();
+	session_start();
+	$_SESSION['page'] = "HOME" ;
+  	include('commonHtmlHead.html');
+  	require_once('CommonConstants.php');
+?>
 	<body class="index loading">
 	
 		<!-- Header -->
-			<header id="header" class="alt">
-				<h1 id="logo"><a href="index.html">Inner Power <span> - Unlock the power within</span></a></h1>
-				<nav id="nav">
-					<ul>
-						<li class="current"><a href="index.html"><span class="icon fa-home"></span>&nbsp;&nbsp;Welcome</a></li>
-						<li class="submenu">
-							<a href=""><span class="icon fa-list"></span>&nbsp;&nbsp;Browse</a>
-							<ul>
-							    <li><a href="javascript:none();"><span class="icon fa-bars"></span>&nbsp;&nbsp;About</a></li>
-								<li class="submenu">
-									<a href=""><span class="icon fa-tasks"></span>&nbsp;&nbsp;Program</a>
-									<ul>
-										<li><a href="#"><span class="icon fa-bars"></span>&nbsp;&nbsp;About</a></li>
-										<li><a href="#"><span class="icon fa-check-square-o"></span>&nbsp;&nbsp;Take Away</a></li>
-										<li><a href="#"><span class="icon fa-file-text"></span>&nbsp;&nbsp;Theme</a></li>
-										<li><a href="javascript:none();"><span class="icon fa-bullhorn"></span>&nbsp;&nbsp;Speakers</a></li>
-										<li><a href="#"><span class="icon fa-calendar"></span>&nbsp;&nbsp;Schedule</a></li>
-									</ul>
-								</li>
-								<li class="submenu">
-									<a href=""><span class="icon fa-map-marker"></span>&nbsp;&nbsp;Destination</a>
-									<ul>
-										<li><a href="#"><span class="icon fa-globe"></span>&nbsp;&nbsp;Place</a></li>
-										<li><a href="#"><span class="icon fa-sign-in"></span>&nbsp;&nbsp;Resort</a></li>
-										<li><a href="#"><span class="icon fa-plane"></span>&nbsp;&nbsp;Transport</a></li>
-									</ul>
-								</li>
-								<li class="submenu">
-									<a href=""><span class="icon fa-money"></span>&nbsp;&nbsp;Sponsors</a>
-									<ul>
-										<li><a href="#"><span class="icon fa-desktop"></span>&nbsp;&nbsp;Overview</a></li>
-										<li><a href="#"><span class="icon fa-gift"></span>&nbsp;&nbsp;Benefit</a></li>
-										<li><a href="#"><span class="icon fa-pencil"></span>&nbsp;&nbsp;Registration</a></li>
-										<li><a href="#"><span class="icon fa-question"></span>&nbsp;&nbsp;Enquiry</a></li>
-									</ul>
-								</li>
-								<li class="submenu">
-									<a href=""><span class="icon fa-user"></span>&nbsp;&nbsp;Attendee</a>
-									<ul>
-										<li><a href="#"><span class="icon fa-desktop"></span>&nbsp;&nbsp;Overview</a></li>
-										<li><a href="#"><span class="icon fa-pencil"></span>&nbsp;&nbsp;Registration</a></li>
-										<li><a href="#"><span class="icon fa-question"></span>&nbsp;&nbsp;Enquiry</a></li>
-									</ul>
-								</li>
-								<li><a href="javascript:none();"><span class="icon fa-info-circle">&nbsp;&nbsp;Need Assistance</a></li>
-							</ul>
-						</li>
-
-						<li><a href="contact.html" class="button special"><span class="icon fa-envelope">&nbsp;&nbsp;Contact</a></li>
-					</ul>
-				</nav>
-			</header>
+			<?php
+			  include('commonPageAltHead.php');
+			?>
 
 		<!-- Banner -->		
 			<section id="banner">
+				<div class="wrapper container" style="padding-bottom:10px;">
 				
 				<!--
 					".inner" is set up as an inline-block so it automatically expands
@@ -89,31 +22,52 @@
 					automatically wrap lines, so be sure to use line breaks where
 					appropriate (<br />).
 				-->
-				<div class="inner">
+				<!-- <div class="inner">
 					
 					<header>
-						<h2>INNER POWER</h2>
+						<h2 style="font-size: 25px;"><?php echo COMPANY_NAME ; ?></h2>
 					</header>
-					<p><strong>Unlock the power within</strong>
-					<br />Holiday Inn Resort, Goa
-					<br />2014, Sept 26<sup>th</sup> - 28<sup>th</sup>
+					<p>is organizing a 2 days event<br><strong style="color:#83d3c9;">Inner Power - Unlock the power within</strong>
+					<br>@ Holiday Inn Resort, Goa
+					<br>on 2014, Sept 26<sup>th</sup> - 28<sup>th</sup>
 					<footer>
 						<ul class="buttons vertical">
 							<li><a href="#main" class="button fit scrolly">Tell Me More</a></li>
 						</ul>
 					</footer>
 				
+				</div> -->
+
+				<div class="row">
+					<div class="8u" align="left" style="text-align: justify;">
+						<h2>We are: <strong><?php echo COMPANY_NAME ; ?></strong></h2>
+						<p>
+							We are a training, coaching and mentoring company with a belief to tap into the power that lies within us to achieve our peak potential.
+							And we are associated with world class mentors, coaches and leaders.
+						</p>
+						<p>
+							We believe in the importance of leadership in today’s constantly evolving business landscape to overcome our internal limitations and blocks to accelerate success
+						</p>
+					</div>
+					<div class="4u" align="center">
+						<p></p>
+						<p>
+							<a href="" class="button">Inner Power:<br>Leadership for <br>Changing Times</a>
+						</p>
+						<p>
+							<a href="" class="button">Book Now Sponsorship</a>
+						</p>
+					</div>
 				</div>
-				
+				</div>
 			</section>
 		
 		<!-- Main -->
 			<article id="main">
 
 				<header class="special container">
-					<!-- <span class="icon fa-bar-chart-o"></span> -->
 					<span class="icon"><img src="images/ip_logo_small.png"/></span>
-					<h2><strong>INNER POWER</strong><br>is organizing a<br>two-and-half-days event.</h2>
+					<h2><strong><?php echo COMPANY_NAME ; ?></strong><br>is organizing a<br>TWO-days event.</h2>
 					<p>It will be comprising of a series of theme based workshop<br>sessions to strengthen the core beliefs of individuals to excel in every aspects of life (professional &amp; personal).</p>
 				</header>
 					
@@ -123,12 +77,13 @@
 							<div class="8u">
 							
 								<header>
-									<h2>I believe there's an <strong>INNER POWER</strong> that makes winners or losers, and the winner are the ones who really listen to the truth of their hearts.<br> <span class="icon fa-comments"></span>  Sylvester Stallone  <span class="icon fa-comments"></span></h2>
+									<h2>I believe there's an <strong>INNER POWER</strong> that makes winners or losers, and the winner are the ones who really listen to the truth of their hearts.<br>
+									<span class="icon fa-comments"></span>  Sylvester Stallone  <span class="icon fa-comments"></span></h2>
 								</header>
 								<p>The event is an open event for passionate entrepreneurs, visionaries and for those who looking forward to take charge of their lives. Where you will get to meet inspiring speakers and network with passionate minded individuals.</p>
 								<footer>
 									<ul class="buttons">
-										<li><a href="#" class="button">Find Out More</a></li>
+										<li><a href="event_ip_utpw.php" class="button">Find Out More</a></li>
 									</ul>
 								</footer>
 							
@@ -148,64 +103,115 @@
 						</div>
 					</section>
 
-				<!-- CTA -->
-					<section id="cta">
-					
-						<header>
-							<h2><strong>Sponsorship</strong> Opportunities</h2>
-							<p>Make valuable connections within the Inner Power community<br>
-							by becoming a Conference Sponsor and promoting your <br>products &amp; services to this Passionate Community.</p>
+					<section class="wrapper style3">
+						<header class="major" align="center">
+								<h2><strong>About Us</strong></h2>
 						</header>
-						<footer>
-							<!-- <ul class="buttons">
-								<li><a href="#" class="button special">Sponsorship Portfolio</a></li>
-								<li><a href="#" class="button">Pledge Form</a></li>
-							</ul> -->
-							<ul class="buttons">
-								<li><a href="#" class="button">Know More</a></li>
-							</ul>		
-						</footer>
-					
-					</section>	
-					
-				<!-- Two -->
-					<!-- <section class="wrapper style1 container special">
+						<div class="row half">
+							<p>
+								We are a Training Company whose belief is to tap the Incredible Power that lies within us to achieve our Peak Potentials in life.  To achieve this we are associated with world class mentors, coaches.
+								We believe in the importance of leadership and personal belief management in today’s constant evolving business industry and the need for overcoming our internal bondages and blockages to accelerate success.
+							</p>
+						</div>
+
+						
+							<header class="major" align="center">
+									<h2>Our Mission</h2>
+							</header>
+						
+							
+							<p>
+								<ul>
+									<li class="labeltag"><strong>Inspire to Peak Performance</strong></li>
+									<li class="labeltag-red"><strong >Developing positive attitude towards life</strong></li>
+									<li class="labeltag-blue"><strong >Empowering Vision, Passion and Goals</strong></li>
+									<li class="labeltag-yellow"><strong >Self-Leadership</strong></li>
+									<li class="labeltag"><strong >Adaption to change</strong></li>
+									<li class="labeltag-red"><strong >Holistic Growth</strong></li>
+									<li class="labeltag-blue"><strong >Emotional Management</strong></li>
+									<li class="labeltag-yellow"><strong>Belief and focus management: over coming limited belives</strong></li>
+								</ul>
+							</p>
+						
+
+						
+							<div align="center">
+								<p>
+									<a href="about_us.php" class="button special">Know Us More</a>
+								</p>
+							</div>
+
+						
+						
+						
+					</section>
+
+				
+
+				<!-- Offerings
+					<section class="wrapper style1 container special">
+						<header class="major">
+								<h2><strong>OUR OFFERINGS</strong></h2>
+							</header>
 						<div class="row">
+
 							<div class="4u">
-							
+								
 								<section>
-									<span class="icon feature fa-check"></span>
 									<header>
-										<h3>This is Something</h3>
+										<h3>One day workshops</h3>
 									</header>
-									<p>Sed tristique purus vitae volutpat ultrices. Aliquam eu elit eget arcu commodo suscipit dolor nec nibh. Proin a ullamcorper elit, et sagittis turpis. Integer ut fermentum.</p>
+									<p>We organize one day workshops on a wide range of topics and themes.
+									These workshops are customizable and can be delivered in corporate organizations and institutions.
+									</p>
+									
 								</section>
 							
 							</div>
 							<div class="4u">
 							
 								<section>
-									<span class="icon feature fa-check"></span>
 									<header>
-										<h3>Also Something</h3>
+										<h3>Events</h3>
 									</header>
-									<p>Sed tristique purus vitae volutpat ultrices. Aliquam eu elit eget arcu commodo suscipit dolor nec nibh. Proin a ullamcorper elit, et sagittis turpis. Integer ut fermentum.</p>
+									<p>We organize mega training/learning events, wherein we bring world-class coaches, thought leaders, 
+									and expert professionals from various industry segments under one roof.
+									</p>
+									
 								</section>
 							
 							</div>
 							<div class="4u">
 							
 								<section>
-									<span class="icon feature fa-check"></span>
 									<header>
-										<h3>Probably Something</h3>
+										<h3>Weekend workshops</h3>
 									</header>
-									<p>Sed tristique purus vitae volutpat ultrices. Aliquam eu elit eget arcu commodo suscipit dolor nec nibh. Proin a ullamcorper elit, et sagittis turpis. Integer ut fermentum.</p>
+									<p>Our in-house team of experienced trainers and coaches bring you specially designed unique weekend workshops.
+									 Offered both as open workshops as well as exclusive events.
+									</p>
 								</section>
 							
 							</div>
 						</div>
 					</section> -->
+
+				<!-- CTA -->
+					<section id="cta">
+					
+						<header>
+							<h2><strong>Sponsorship</strong> Opportunities</h2>
+							<p>Make valuable connections within the <?php echo COMPANY_NAME ; ?> community<br>
+							by becoming a Conference Sponsor and promoting your <br>products &amp; services to this Passionate Community.</p>
+						</header>
+						<footer>
+							<ul class="buttons">
+								<li><a href="sponsors.php" class="button">Know More</a></li>
+							</ul>		
+						</footer>
+					
+					</section>
+				
 					
 				<!-- Three -->
 					<section class="wrapper style3 container special">
@@ -213,59 +219,51 @@
 						<header class="major">
 							<h2><strong>SPEAKERS - AN INTRO</strong></h2>
 						</header>
+
+						<div class="row">
+							<div class="4u">
+								<img class="circle" src="images/pavan.png"/>
+							</div>
+							<div class="8u" align="left">
+								<h3><strong>Pavan Bakshi</strong></h3>
+								<p>A Colonel (Veteran), PMP, RCS Certified Executive Coach has a work experience of 30 years and wide expertise in the domain of Operations, Projects, Supply Chain Management, Business Development and Training.</p>
+							</div>
+						</div>
+
+						<!-- <div class="row">
+							<div class="8u" align="right">
+								<h3><strong>Jacob Mathewis</strong></h3>
+								<p>An innovative coach &amp; an effective Change Practitioner, with extensive experience in business optimisation and transformational coaching. A Certified Six Sigma Master Black Belt and Lean Practitioner from the US.</p>
+							</div>
+							<div class="4u">
+								<img class="circle" src="images/mathew.png"/>
+							</div>
+						</div> -->
+
+						<div class="row">
+							<div class="8u" align="right">
+								<h3><strong>Jeanne-d’Arc Jabbour Rajagopal</strong></h3>
+								<p>An Entrepreneur, a Pranic Healer, Pranic Healing Instructor and Arhatic Yoga® Practioner. She has a BA in Sociology with Minor in Psychology and MBA in Marketing from the American University in Dubai.</p>
+							</div>
+							<div class="4u" >
+								<img class="circle" src="images/rajagopal.png"/>
+							</div>
+						</div>
+
+						<div class="row">
+							<div class="4u">
+								<img class="circle" src="images/sweta.png"/>
+							</div>
+							<div class="8u" align="left">
+								<h3><strong>Shwetha Bhatia</strong></h3>
+								<p>A registered dietician with the Indian Dietetic Association. Shwetha’s academic excellence is superseded by her successful and established clinical practice under the brand name ‘Metamorphosis’.</p>
+							</div>
+						</div>
+
 						
-						<div class="row">
-							<div class="6u">
-							
-								<section>
-									<a href="#" class="image feature"><img src="images/pavan.png" alt="" /></a>
-									<header>
-										<h3><strong>Pavan Bakshi</strong></h3>
-									</header>
-									<p>A Colonel (Veteran), PMP, RCS Certified Executive Coach has a work experience of 30 years and wide expertise in the domain of Operations, Projects, Supply Chain Management, Business Development and Training.</p>
-								</section>
-
-							</div>
-							<div class="6u">
-							
-								<section>
-									<a href="#" class="image feature"><img src="images/mathew.png" alt="" /></a>
-									<header>
-										<h3><strong>Jacob Mathewis</strong></h3>
-									</header>
-									<p>An innovative coach &amp; an effective Change Practitioner, with extensive experience in business optimisation and transformational coaching. A Certified Six Sigma Master Black Belt and Lean Practitioner from the US.</p>
-								</section>
-
-							</div>
-						</div>
-						<div class="row">
-							<div class="6u">
-							
-								<section>
-									<a href="#" class="image feature"><img src="images/rajagopal.png" alt="" /></a>
-									<header>
-										<h3><strong>Jeanne-d’Arc Jabbour Rajagopal</strong></h3>
-									</header>
-									<p>An Entrepreneur, a Pranic Healer, Pranic Healing Instructor and Arhatic Yoga® Practioner. She has a BA in Sociology with Minor in Psychology and MBA in Marketing from the American University in Dubai.</p>
-								</section>
-
-							</div>
-							<div class="6u">
-							
-								<section>
-									<a href="#" class="image feature"><img src="images/sweta.png" alt="" /></a>
-									<header>
-										<h3><strong>Shwetha Bhatia</strong></h3>
-									</header>
-									<p>A registered dietician with the Indian Dietetic Association. Shwetha’s academic excellence is superseded by her successful and established clinical practice under the brand name ‘Metamorphosis’.</p>
-								</section>
-
-							</div>
-						</div>
-
 						<footer class="major">
 							<ul class="buttons">
-								<li><a href="#" class="button">Know More</a></li>
+								<li><a href="speakers.php" class="button">Know More</a></li>
 							</ul>
 						</footer>
 					
@@ -282,27 +280,14 @@
 				</header>
 				<footer>
 					<ul class="buttons">
-						<li><a href="#" class="button special">Registration Form</a></li>
-						<li><a href="#" class="button">Enquiry Form</a></li>
+						<li><a href="attendee.php" class="button">Know More</a></li>
+						<li><a href="attendee.php#attendeeRegisteration" class="button special">Registration Form</a></li>
 					</ul>
 				</footer>
 			
 			</section>
 
-		<!-- Footer -->
-			<footer id="footer">
-			
-				<ul class="icons">
-					<li><a href="#" class="icon circle fa-twitter"><span class="label">Twitter</span></a></li>
-					<li><a href="#" class="icon circle fa-facebook"><span class="label">Facebook</span></a></li>
-					<li><a href="#" class="icon circle fa-google-plus"><span class="label">Google+</span></a></li>
-					<!-- <li><a href="#" class="icon circle fa-github"><span class="label">Github</span></a></li>
-					<li><a href="#" class="icon circle fa-dribbble"><span class="label">Dribbble</span></a> --></li>
-				</ul>
-				
-				<span class="copyright">&copy; Inner Power. All rights reserved.</span>
-			
-			</footer>
-
-	</body>
-</html>
+		<!-- footer -->
+			<?php
+			  include('commonPageFooter.php');
+			?>

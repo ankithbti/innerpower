@@ -3,234 +3,521 @@
 	session_start();
 	$_SESSION['page'] = "EVENT" ;
   	include('commonHtmlHead.html');
-  	// require_once('resources/dbconfig.php');
+  	require_once('CommonConstants.php');
 ?>
 	<body class="no-sidebar loading">
 	
+		<div id="showAlways" style="padding:0px;margin:0px;position: fixed ; bottom:0px; right:0px; z-index:5000;">
+			<!-- <a href="index.php#askQuery" class="scrolly"><img style="width:80%;" src="images/post_your_query.png" /></a> -->
+			<a href="postQuery.php" style="padding:5px 10px; background-color:rgba(0,0,0,1);color:#f1f1f1;">Post your queries&nbsp;&nbsp;<span class="icon fa-question-circle"></span></a>
+		</div>
+
 		<!-- Header -->
 			<?php
 			  include('commonPageMainHead.php');
 			?>
+
+			
 		
 		<!-- Main -->
-			<article id="">
+			<article id="eventAbout">
 
-				<!-- Two -->
-					<section class="wrapper style1 container" style="margin-top:10px; margin-bottom: 10px;">
-						<!-- Content -->
-							<div class="content">
-								<section>
-									
-									<header id="eventAbout">
-										<h2>About &#8220;Inner Power - Unlock the Power Within&#8221;</h2>
-									</header>
-									<p>It is an open event for passionate entrepreneurs, professionals and those looking forward to take charge of their lives. It includes a series of workshop segments and key-note speeches by inspirational achievers and thought leaders from various fields.</p>
-									<p>
-										We live in a business and professional landscape that is marked by rapid and (many a times) volatile change. Staying in one’s comfort zone is a perilous option that leads individuals and organizations to atrophy and redundancy of the worst kind. Any change response made thereafter is highly reactive in nature, and can simply tire you out into oblivion. It is important to proactively manage this change and avoid feeling overwhelmed by the disorienting potential of change. This capability of individuals and teams holds the key to sharpening competitive edge for businesses across the board. Our team of highly experienced coaches and trainers have designed “Inner Power” to be an enabling platform for organizations, leaders and working professionals in their quest for excellence. 
-									</p>
+				<section id="banner" style="padding-bottom:10px;padding-top:10px;">
+					<div class="wrapper container" style="padding-bottom:30px;margin-bottom:10px;">
+					</div>
+				</section>
 
-									<header id="eventBenefits">
-										<h2>Take Away/Benefits</h2>
-									</header>
-									<p>
-										<h4>
-											<span class="icon fa-quote-left"></span>&nbsp;&nbsp;The secret of outstanding achievement runs much more than knowing strategy or knowledge, it is born from within oneself, we call it "Inner Power". In Inner Power club, you will meet highly successful speakers, and inspiring people among invitees and passionate participants, 
-											who will inspire you to take you  to next level of personal achievement.&nbsp;&nbsp;<span class="icon fa-quote-right"></span>
-										</h4>
-									</p>
-									<p>
-										<ul>
-											<li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="icon fa-gift"></span>&nbsp;&nbsp;Learn highly practical and useful tools to transform your performance in business/work place.</li>
-											<li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="icon fa-gift"></span>&nbsp;&nbsp;Get initiated to the “Inner Power toolkit”</li>
-											<ul>
-												<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="icon fa-key"></span>&nbsp;&nbsp;Script a winning personal blueprint to proactively lead and manage change in professional &amp; personal areas of life.</li>
-												<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="icon fa-key"></span>&nbsp;&nbsp;Powerful reflective exercises to generate actionable insights.</li>
-												<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="icon fa-key"></span>&nbsp;&nbsp;Create meticulous plans for implementing your agenda for excellence.</li>
-												<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="icon fa-key"></span>&nbsp;&nbsp;Learn to strengthen your belief patterns to inspire and motivate yourself through the crests and troughs of your success journey.</li>
-												<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="icon fa-key"></span>&nbsp;&nbsp;Building personal energy and stamina for power-packed performance at work/business and beyond.</li>
-											</ul>
-											<li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="icon fa-gift"></span>&nbsp;&nbsp;Highly interactive learning format with case studies, group activities, simulations and discussions for an engaging learning experience.</li>
-											<li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="icon fa-gift"></span>&nbsp;&nbsp;Get trained by International level trainers, coaches, inspiring speakers and experts.</li>
-											<li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="icon fa-gift"></span>&nbsp;&nbsp;Network with passionate minded individuals from various industry segments.</li>
-											<li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="icon fa-gift"></span>&nbsp;&nbsp;Continuous post workshop engagement &amp; support to help you develop and sustain new empowering habits for lasting change:</li>
-											<ul>
-												<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="icon fa-key"></span>&nbsp;&nbsp;Increase effectiveness in your business/work, and in personal life.</li>
-												<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="icon fa-key"></span>&nbsp;&nbsp;Be productive today in whatever you are currently doing.</li>
-												<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="icon fa-key"></span>&nbsp;&nbsp;Continuously improve so that you embrace change and stay well ahead of the competition.</li>
-												<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="icon fa-key"></span>&nbsp;&nbsp;Make incremental improvements to make this a very sustainable and enjoyable journey.</li>
-											</ul>
-										</ul>
-									</p>
-
-									<header id="eventThemes">
-										<h2>Themes</h2>
-									</header>
-									<p>
-										The themes for the workshop segments are as follows:
-										<p align="center"><img src="images/themes.png" /></p>
-										<ul>
-											<li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="icon fa-magic"></span>&nbsp;&nbsp;<strong>Leadership</strong> &amp; <strong>Coaching</strong> Culture for High <strong>Performance</strong>.</li>
-											<li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="icon fa-magic"></span>&nbsp;&nbsp;Jumpstarting <strong>Performance</strong> by harnessing <strong>Passion</strong>, <strong>Belief</strong> &amp; <strong>Adaptability</strong>.</li>
-											<li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="icon fa-magic"></span>&nbsp;&nbsp;<strong>Self Care: </strong> Transforming fitness and wellness to transform businesses.</li>
-											<li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="icon fa-magic"></span>&nbsp;&nbsp;<strong>Personal Energy Management: </strong> Channeling <strong>self-inspiration</strong> for transformational change.</li>
-										</ul>
-									</p>
-									
-									<header id="eventSpeakers">
-										<h2>Speakers</h2>
-									</header>
-									<p>
-										We bring to you the best in class mentors:
-										<ul>
-											<li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="icon fa-user"></span>&nbsp;&nbsp;<a href="speakers.php#pavan">Pavan Bakshi</a></li>
-											<li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="icon fa-user"></span>&nbsp;&nbsp;<a href="speakers.php#mathew">Jacob Mathew</a></li>
-											<li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="icon fa-user"></span>&nbsp;&nbsp;<a href="speakers.php#rajagopal">Jean</a></li>
-											<li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="icon fa-user"></span>&nbsp;&nbsp;<a href="speakers.php#sweta">Shwetha</a></li>
-										</ul>
-									</p>
-
-									<header id="eventSchedule">
-										<h2>Schedule</h2>
-									</header>
-									<p>
-										Sep 26<sup>th</sup> to Sep 28<sup>th</sup>
-									</p>
-
-									<p>
-										<ul>
-											<li id="eventday1">&nbsp;&nbsp;&nbsp;&nbsp;<span class="icon fa-calendar"></span>&nbsp;&nbsp;Day 1 ( 26<sup>th</sup> Sep )<br><br>
-											<p align="center"><img src="images/day1.png" /></p>
-											</li>
-											<li id="eventday2">&nbsp;&nbsp;&nbsp;&nbsp;<span class="icon fa-calendar"></span>&nbsp;&nbsp;Day 2 ( 27<sup>th</sup> Sep )<br><br>
-											</li>
-											<p align="center"><img src="images/day2.png" /></p>
-											<li id="eventday3">&nbsp;&nbsp;&nbsp;&nbsp;<span class="icon fa-calendar"></span>&nbsp;&nbsp;Day 3 ( 28<sup>th</sup> Sep )<br><br>
-											<p align="center"><img src="images/day3.png" /></p>
-											</li>
-										</ul>
-									</p>
-
-
-									<header id="eventVenue">
-										<h2>Venue</h2>
-									</header>
-									<p>
-										<strong>Holiday Inn</strong> Resort,
-										<br>Mobor Beach cavelossim, Cavelossim,
-										<br><strong>Goa</strong> - 403731, India
-									</p>
-									<p>
-										Goa  is India's smallest state by area and the fourth smallest by population. Located in West India in the region known as the Konkan, it is bounded by the state of Maharashtra to the north, and by Karnataka to the east and south, while the Arabian Sea forms its western coast.
-									</p>
-
-									<p>
-										Mobor Beach is an ideal location for adventure tourists. It is one of the most popular beaches in Goa. You can choose from a wide variety of adventure sports such as water skiing, water surfing, jet ski, banana and bump rides and parasailing. The best time to visit Mobor Beach is September-March.
-									</p>
-
-									<header id="eventWhoToAttend">
-										<h2>Who should attend ?</h2>
-									</header>
-									<p>
-										<ul>
-											<li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="icon fa-meh-o"></span>&nbsp;&nbsp;Working professionals</li>
-											<li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="icon fa-meh-o"></span>&nbsp;&nbsp;Passionate entrepreneurs, and</li>
-											<li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="icon fa-meh-o"></span>&nbsp;&nbsp;Anyone who is looking forward to take charge of his/her life.</li>
-										</ul>
-									</p>
-
-									<header id="eventSponsorship">
-										<h2>Sponsorship Opportunities</h2>
-									</header>
-									<p>
-										Make valuable connections within the Inner Power community
-										by becoming a Conference Sponsor and promoting your products &amp; services to this Passionate Community.
-									</p>
-									<p>
-										<ul class="buttons">
-											<li><a href="sponsors.php" class="button special">Know More</a></li>
-										</ul>
-									</p>
-
-									<header id="eventNeedAssistance">
-										<h2>Need Assistance</h2>
-									</header>
-									<p>
-										<h2>Here for you</h2>
-										<ul>
-											<li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="icon fa-circle"></span>&nbsp;&nbsp;<a href="mailto:raphael@innerpowerclub.com">Contact the Sponsor Liaison</a></li>
-											<li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="icon fa-circle"></span>&nbsp;&nbsp;<a href="mailto:raphael@innerpowerclub.com">Registration Inquiries and Assistance</a></li>
-											<li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="icon fa-circle"></span>&nbsp;&nbsp;<a href="mailto:raphael@innerpowerclub.com">Contact for Inner Power Membership</a></li>
-											<li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="icon fa-circle"></span>&nbsp;&nbsp;<a href="mailto:raphael@innerpowerclub.com">Contact for Press Inquiries</a></li>
-											<li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="icon fa-circle"></span>&nbsp;&nbsp;<a href="mailto:raphael@innerpowerclub.com">Contact for Volunteer Coordinator</a></li>
-										</ul>
-
-										<h2>Conference Program</h2>
-										<ul>
-											<li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="icon fa-circle"></span>&nbsp;&nbsp;<a href="mailto:raphael@innerpowerclub.com">Program &amp; Schedule</a></li>
-											<li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="icon fa-circle"></span>&nbsp;&nbsp;<a href="mailto:raphael@innerpowerclub.com">Program Tracks</a></li>
-											<li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="icon fa-circle"></span>&nbsp;&nbsp;<a href="mailto:raphael@innerpowerclub.com">Keynote Speakers</a></li>
-											<li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="icon fa-circle"></span>&nbsp;&nbsp;<a href="mailto:raphael@innerpowerclub.com">Special Events</a></li>
-										</ul>
-
-										<h2>Conference Sponsorship Info</h2>
-										<ul>
-											<li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="icon fa-circle"></span>&nbsp;&nbsp;<a href="docs/SponsorshipPortfolio.pdf" target="_blank">Download the Sponsorship Portfolio</a></li>
-											<li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="icon fa-circle"></span>&nbsp;&nbsp;<a href="docs/SponsorshipAgreement.pdf" target="_blank">Download the Sponsor's Pledge form</a></li>
-											<li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="icon fa-circle"></span>&nbsp;&nbsp;<a href="sponsors.php#contactToEnq">Inquire about Sponsorship</a></li>
-										</ul>
-									</p>
-
-									
-
-								</section>
-
+				<div class="row">
+					<div class="4u fullImage">
+						<img src="images/sunrise.png" />
+					</div>
+					<div class="8u" align="center">
+						<div class="textPadding">
+							<h3>IPTS is organizing its 2 days workshop event 
+							“Leadership for Changing Times” at Holiday INN- Goa- 26th to 28th Sep.</h3>
+							<div class="bluishribbon">
+								<strong>Leading with Passion, Belief &amp; Self-Inspiration</strong>
 							</div>
+							<h3>A workshop to address the need for a leadership mind-set
+							 to capture opportunities amidst a rapidly evolving business landscape.</h3>
+						</div>
+					</div>
+				</div>
 
+				
+
+				
+
+				<section class="wrapper style1 moveDown1 container special-alt" style="margin-bottom:0px;padding-bottom:30px;">
+						<div class="row half">
+							<div class="12u">
+								<p>
+								<strong>“Leadership for Changing Times”</strong> is a conclave to address the need for a 
+								transformational and holistic leadership mind-set to capture opportunities and 
+								address the challenges faced in a rapidly changing business landscape. A practical, 
+								contemporary and dynamic leadership model can inspire people to pursue superior results with Passion, 
+								Belief, Adaptability, and an abiding spirit of Collaboration
+								</p>
+
+								<p class="grayBG">
+									<strong>Who Should Attend:</strong>This edition is targeted at Senior and Middle Management, and mid level professionals (10-20 yrs exp).
+								</p>
+
+								<p>
+								<strong>Lead Trainer/Facilitator</strong> for the event: <strong>Col (Retd.) Pavan Bakshi</strong> (CEO, Prime Meridian Consulting, Pvt. Ltd)
+								</p>
+							</div>
+									
+						</div>
 					</section>
 
-				
-				
-				
+					<section class="style1 moveDown1" style="margin:0px;padding:0px;background-color:#333;color:#f1f1f1;">
+						<div class="wrapper" style="margin-bottom:0px;">
+							<div class="row">
+								<div class="3u padImage">
+									<img src="images/hand.png" />
+								</div>
+								<div class="9u" align="center">
+									<div class="textPadding makeTextSmall">
+										<h3>
+											"Leadership is less about the position you hold than the influence you have.
+											It’s about doing world-class work, playing at your peak, and leaving people better than you found them. It’s about Leading Without a Title.
+											Leadership is no longer about position – but passion. It’s no longer about image but impact."
+										</h3>
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
 
-				
 
-				<!-- Forum
-					<section class="wrapper style2 container special-alt">
-						<div class="row half">
-							<div class="8u">
-							
-								<header>
-									<h2><strong>Forum</strong>
-								</header>
+					<div class="sectionSegregation" align="center" id="eventBenefits" >
+						<div class="container">
+							<div class="row half">
+							<div class="1u">
+								<h2></h2>
+							</div>
+							<div class="10u">
+										<h3>The Workshop Experience &amp; Take-Away: An Overview</h3>
+									</div>
+							<div class="1u">
+								<h2></h2>
+							</div>
+						</div>
+						</div>
+					</div>
+
+					<section class="style1" style="background-color: #f1f1f1;">
+						<div class="wrapper" style="margin:0px;padding:0px;">
+							<div class="row">
+								<div class="2u">
+								</div>
+								<div class="10u">
+									<div class="textBenefits">
+										<ul>
+											<li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="icon fa-caret-right"></span>&nbsp;&nbsp;&nbsp;&nbsp;Introduction to the <strong>Integrated Leadership Toolkit &amp; The Leadership Mindset</strong></li>
+											<li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="icon fa-caret-right"></span>&nbsp;&nbsp;&nbsp;&nbsp;Learning activities facilitated by our team of Senior Coaches and trainers</li>
+											<li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="icon fa-caret-right"></span>&nbsp;&nbsp;&nbsp;&nbsp;<strong>Passion Compass:</strong> Tapping into your passion drivers, with deep awareness of strengths and weaknesses</li>
+											<li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="icon fa-caret-right"></span>&nbsp;&nbsp;&nbsp;&nbsp;Create <strong>Personalized Leadership Blueprint</strong> (based on the Inner Power Leadership Model)</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+
+					<section class="style1 moveDown1 fillBG">
+						<div class="wrapper" style="margin:0px;padding:0px;">
+							<div class="row">
+								<div class="12u">
+									<div class="textBenefitsMore">
+										<ul>
+											<li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="icon fa-caret-right"></span>&nbsp;&nbsp;&nbsp;&nbsp;<strong>Power Habits for Superior Results:</strong></li>
+												<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="icon fa-circle-o"></span>&nbsp;&nbsp;Learn user-friendly tools, processes, worksheets &amp; handouts to create and sustain powerful habits to increase effectiveness at work with enhanced passion, motivation and belief in their daily lives.</li>
+												<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="icon fa-circle-o"></span>&nbsp;&nbsp;How to channel Self Inspiration and get going when times are tough.</li>
+											<li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="icon fa-caret-right"></span>&nbsp;&nbsp;&nbsp;&nbsp;Powerful introspective and reflective processes to generate <strong>‘actionable’ insights</strong></li>
+												<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="icon fa-circle-o"></span>&nbsp;&nbsp;Ethical decision making.</li>
+											<li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="icon fa-caret-right"></span>&nbsp;&nbsp;&nbsp;&nbsp;<strong>Working with Emotional Intelligence:</strong> Practical tips to Manage Self, Enhance Relationships with team and customers, and beyond work.</li>
+											<li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="icon fa-caret-right"></span>&nbsp;&nbsp;&nbsp;&nbsp;How to develop a Coaching Culture to help people &amp; teams realize their potential</li>
+											<li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="icon fa-caret-right"></span>&nbsp;&nbsp;&nbsp;&nbsp;<strong>Energy &amp; Self Care:</strong> Building personal energy and stamina for power-packed performance at work/business and beyond.</li>
+										</ul>
+									</div>
+								</div>
+								
+							</div>
+						</div>
+					</section>
+
+					<section class="style1" style="background-color: #f1f1f1;">
+						<div class="wrapper" style="margin:0px;padding:0px;">
+							<div class="row">
+								<div class="12u">
+									<div class="textBenefits">
+										<p>
+											<strong>Peer Networking:</strong> Begin an inspired journey along with peers from other 
+											parts of India
+											Our panel of expert coaches and leaders have designed this model 
+											by drawing on their own rich experience across industries, and 
+											cutting edge research in the fields of Leadership, 
+											Emotional Intelligence, Coaching frameworks, and 
+											Personal Excellence Frameworks. The program has a highly 
+											interactive format with case studies, group activities, simulations 
+											and discussions for an engaging learning experience.
+										</p>
+
+										<p>
+											<strong>Post workshop engagement</strong> &amp; support to help you develop 
+											and sustain new empowering habits for lasting change. 
+											This follow-up will be done primarily via online means 
+											(webinars, newsletters, blogs). Webinars will be offered for
+											 duration of 2 months. You will also be part of our online community. 
+											 We will also provide (optional) online support system for participants to 
+											maintain their power habits with personalized tracking pages.
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+
+					<div class="sectionSegregation" align="center" id="speakers">
+						<div class="container">
+							<div class="row half">
+							<div class="1u">
+								<h2></h2>
+							</div>
+							<div class="10u">
+										<h3>Speakers</h3>
+									</div>
+							<div class="1u">
+								<h2></h2>
+							</div>
+						</div>
+						</div>
+					</div>
+
+					<section class="style1" align="center" style="margin:0px;padding-top:20px;padding-bottom:40px;background-color:#0088cc;color:#f1f1f1;">
+					
+					<div id="pavan">
+					<div class="container">
+						<div class="row">
+							<div class="4u">
+								<img class="circle" src="images/pavan.png"/>
+							</div>
+							<div class="8u" align="left">
+								<h3><strong>Pavan Bakshi</strong>&nbsp;&nbsp;( Lead Trainer/Facilitator for the event )</h3>
+								<strong>CEO, Prime Meridian Consulting, India Private Limited.</strong>
+								<br>
+								<strong>Chief Facilitator and Executive Coach</strong>
+								<p>Col. Bakshi (PMP, RCS Certified Executive Coach) has a work experience of 30 years . 
+								He is certified to facilitate “THE LEAD WITHOUT A TITLE (LWT) SYSTEMTM for building Leaders 
+								at every level of your organization” created by globally respected Leadership Expert Robin Sharma. 
+								He is also Faculty of Leadershape, UK on Emotional Intelligent and Transpersonal Leadership. 
+								He has been a Principal Consultant Facilitator with Franklin Covey, India and South Asia and 
+								Principal Consultant Facilitator and Executive 
+								Coach with Neuroleadership Group, India and South Asia..</p>
+							</div>
+						</div>
+						<hr>
+					</div>
+					</div>
+
+					<div id="prarthana">
+					<div class="container">
+						<div class="row">
+							<div class="8u makeleftPad" align="right">
+								<h3><strong>Prarthana Prateek Kaul</strong></h3>
+								<strong>Visionary Social Entrepreneur, Trainer &amp; Consultant</strong>
+								<p>
+									Guest Speaker at different institutes including IIT Chennai, IIMB, NMIMS, TISS
+									<br>Passionate Social Entrepreneur: founder of GiftAbled Foundation
+									<br>PGDBA (Finance) from Symbiosys Centre for Distance Learning
+									<br>Worked as Sr. Procurement Specialist in IBM
+								</p>
+							</div>
+							<div class="4u" >
+								<img class="circle" src="images/prarthana.png"/>
+							</div>
+						</div>
+						<hr>
+					</div>
+					</div>
+
+					<div id="sweta">
+					<div class="container">
+						<div class="row">
+							<div class="4u">
+								<img class="circle" src="images/sweta.png"/>
+							</div>
+							<div class="8u" align="left">
+								<h3><strong>Shwetha Bhatia</strong></h3>
+								<p>Shwetha Bhatia is a registered dietician with the Indian Dietetic Association. 
+								She specialises in clinical and sports nutrition.
+								<br>Nutritious Consultant to Celebrities, her articles feathers in Krunch Today
+								<br>A University topper at the graduation and post graduation level in Dietetics, 
+								Shwetha’s academic excellence is superseded by her successful and established 
+								clinical practice under the brand name ‘Metamorphosis’.
+								</p>
+							</div>
+						</div>
+						<hr>
+					</div>
+					</div>
+
+
+					<div id="rajagopal">
+					<div class="container" >
+						<div class="row">
+							<div class="8u makeleftPad" align="right" >
+								<h3><strong>Jeanne-d’Arc Jabbour Rajagopal</strong></h3>
+								<p>
+									An Entrepreneur, a Pranic Healer, Pranic Healing Instructor and Arhatic Yoga® 
+									Practioner. She has a BA in Sociology with Minor in Psychology and MBA in 
+									Marketing from the American University in Dubai. 
+									<br>An Entrepreneur, working on integrating and balancing business and spirituality.
+								</p>
+							</div>
+							<div class="4u" >
+								<img class="circle" src="images/rajagopal.png"/>
+							</div>
+						</div>
+						<hr>
+					</div>
+					</div>
+
+					<div id="raphael">
+					<div class="container">
+						<div class="row">
+							<div class="4u">
+								<img class="circle" src="images/raphael.png"/>
+							</div>
+							<div class="8u" align="left">
+								<h3><strong>Raphael Joseph</strong>&nbsp;&nbsp;(Organizer) &amp; Founder, Inner Power Training Solutions</h3>
+								<p>
+									Corporate Trainer in Leadership, Behavioural &amp; Sales with varied industrial experience; Organizes open workshops with Times of India group.
+								<br>Previously worked as Asst. Team lead in Technicolor India; worked on games such as Tomb Raider, Max Pyan, Hitman, L.A.Noire, series such as How to Train your dragon, Kumfu Panda. Star Performer of Gaming unit.
+								<br>Guest Lecturer; Actively partnered as Mentor for ‘Arena Multimedia’ and ‘Image Multimedia’.
+								<br>Collaborated with YMCA in organizing youth camps, and drug de -addiction camps.
+								<br>Organized youth empowerment programs.
+								</p>
+							</div>
+						</div>
+						<hr>
+					</div>
+					</div>
+
+					<div id="suresh">
+					<div class="container">
+						<div class="row">
+							<div class="8u makeleftPad" align="right" >
+								<h3><strong>Suresh Sivaraman (Organizer)</strong></h3>
+								<p>
+									Founder, Elan Tattva; Co-Founder, Inner Power Training Solutions.
+									<br>Certified Coach from Neuro Leadership Group.
+									<br>Certified NLP Trainer &amp; Life Coach (ANLP).
+									<br>Over 16 years of corporate experience.
+									<br>Extensive work experience in India and Europe.
+									<br>Worked as Delivery Manager in Wipro Technologies.
+									<br>MBA (PGSEM) from IIM Bangalore.
+								</p>
+							</div>
+							<div class="4u" >
+								<img class="circle" src="images/suresh.png"/>
+							</div>
+						</div>
+					</div>
+					</div>
+
+
+					
+
+					
+
+					
+						
+						
+						<footer class="major">
+							<ul class="buttons">
+								<li><a href="speakers.php" class="button">Know More</a></li>
+							</ul>
+						</footer>
+					
+					</section>
+
+					<div class="sectionSegregation" align="center">
+						<div class="container">
+							<div class="row half">
+							<div class="1u">
+								<h2></h2>
+							</div>
+							<div class="10u">
+										<h3>Grow your connections</h3>
+									</div>
+							<div class="1u">
+								<h2></h2>
+							</div>
+						</div>
+						</div>
+					</div>
+
+					<section id="main" align="center" style="background-color:#D94E58;color:#f1f1f1;">
+					
+						<header>
+							<h2><strong>Sponsorship</strong> Opportunities</h2>
+							<p>Make valuable connections within the <?php echo COMPANY_NAME ; ?> community<br>
+							by becoming a Conference Sponsor and promoting your <br>products &amp; services to this Passionate Community.</p>
+						</header>
+						<footer>
+							<ul class="buttons">
+								<li><a href="sponsors.php" class="button">Know More</a></li>
+							</ul>		
+						</footer>
+					
+					</section>
+
+
+					<div class="sectionSegregation" align="center" id="eventVenue">
+						<div class="container">
+							<div class="row half">
+							<div class="1u">
+								<h2></h2>
+							</div>
+							<div class="10u">
+										<h3>An Awesome Venue</h3>
+									</div>
+							<div class="1u">
+								<h2></h2>
+							</div>
+						</div>
+						</div>
+					</div>
+
+					<section class="wrapper style1 container" style="margin-top:10px; margin-bottom: 10px;">
+					<!-- Content -->
+						<div class="content">
+							<section>
+
+								
+								<p>
+									<strong>Holiday Inn</strong> Resort,
+									<br>Mobor Beach cavelossim, Cavelossim,
+									<br><strong>Goa</strong> - 403731, India
+								</p>
+								<p>
+									Goa  is India's smallest state by area and the fourth smallest by population. Located in West India in the region known as the Konkan, it is bounded by the state of Maharashtra to the north, and by Karnataka to the east and south, while the Arabian Sea forms its western coast.
+								</p>
+
+								<p>
+									Mobor Beach is an ideal location for adventure tourists. It is one of the most popular beaches in Goa. You can choose from a wide variety of adventure sports such as water skiing, water surfing, jet ski, banana and bump rides and parasailing. The best time to visit Mobor Beach is September-March.
+								</p>
+
+								</section>
+						</div>
+					</section>
+
+					<div class="sectionSegregation" align="center" id="eventSchedule">
+						<div class="container">
+							<div class="row half">
+							<div class="1u">
+								<h2></h2>
+							</div>
+							<div class="10u">
+										<h3>Event Schedule</h3>
+									</div>
+							<div class="1u">
+								<h2></h2>
+							</div>
+						</div>
+						</div>
+					</div>
+
+					<section class="wrapper style1 container" style="margin-top:10px; margin-bottom: 10px;">
+					<!-- Content -->
+						<div class="content">
+							<section>
+
+								
+								<p>
+									Sep 26<sup>th</sup> to Sep 28<sup>th</sup>
+								</p>
 
 								<p>
 									<ul>
-										<li><span class="icon fa-hand-o-right"></span>&nbsp;&nbsp;Most of us feel the need for the right kind of mentorship at some points in our lives.</li>
-										<li><span class="icon fa-hand-o-right"></span>&nbsp;&nbsp;We may feel the need to clarify some important questions/doubts in different areas of our professional/personal lives.</li>
-										<li><span class="icon fa-hand-o-right"></span>&nbsp;&nbsp;It is important that we get the right support from the right sources.</li>
-										<li><span class="icon fa-hand-o-right"></span>&nbsp;&nbsp;Team Inner Power is happy to facilitate this for anyone who wishes to get such support.</li>
-										<li><span class="icon fa-hand-o-right"></span>&nbsp;&nbsp;“Forum” (where we virtually connect you to expert trainers/coaches online) is the right place for you.</li>
-										<li><span class="icon fa-hand-o-right"></span>&nbsp;&nbsp;You can send us your queries on professional/personal areas where you seem to face challenges on the path to success.</li>
-										<li><span class="icon fa-hand-o-right"></span>&nbsp;&nbsp;We have a panel of Certified Professional Coaches, NLP trainers, Entrepreneurs, Senior Corporate Trainers on our panel. They are excited to take your questions online and share their expertise with you!</li>
-										<li><span class="icon fa-hand-o-right"></span>&nbsp;&nbsp;The questions should be relevant to the services offered by Inner Power.</li>
-										<li><span class="icon fa-hand-o-right"></span>&nbsp;&nbsp;We will answer all the queries in a weeks’ time.</li>
-
+										<li id="eventday1">&nbsp;&nbsp;&nbsp;&nbsp;<span class="icon fa-calendar"></span>&nbsp;&nbsp;Day 1 ( 26<sup>th</sup> Sep )<br><br>
+										<!-- <p align="center"><img src="images/day1.png" /></p> -->
+										<p align="center">
+											<div id="eventDay1Chart"></div>
+										</p>
+										</li>
+										<li id="eventday2">&nbsp;&nbsp;&nbsp;&nbsp;<span class="icon fa-calendar"></span>&nbsp;&nbsp;Day 2 ( 27<sup>th</sup> Sep )<br><br>
+										</li>
+										<!-- <p align="center"><img src="images/day21.png" /></p> -->
+										<p align="center">
+											<div id="eventDay2Chart"></div>
+										</p>
+										<li id="eventday3">&nbsp;&nbsp;&nbsp;&nbsp;<span class="icon fa-calendar"></span>&nbsp;&nbsp;Day 3 ( 28<sup>th</sup> Sep )<br><br>
+										<!-- <p align="center"><img src="images/day31.png" /></p> -->
+										<p align="center">
+											<div id="eventDay3Chart"></div>
+										</p>
+										</li>
 									</ul>
 								</p>
-								
-							</div>
-							<div class="4u skel-cell-important">
-							
-								<ul class="feature-icons">
-									<li><span class="icon fa-users"><span class="label">Forum</span></span></li>
-								</ul>
-							
-							</div>				
-						</div>
-					</section> -->
 
-				
-					
+								</section>
+						</div>
+					</section>
+
+					<div class="sectionSegregation" align="center" id="eventNeedAssistance">
+						<div class="container">
+							<div class="row half">
+							<div class="1u">
+								<h2></h2>
+							</div>
+							<div class="10u">
+										<h3>For Your Assistance</h3>
+									</div>
+							<div class="1u">
+								<h2></h2>
+							</div>
+						</div>
+						</div>
+					</div>
+
+					<section class="wrapper style1 container" style="margin-top:10px; margin-bottom: 10px;">
+						<!-- Content -->
+						<div class="content">
+							<section>
+								<p>
+									<h2>Here for you</h2>
+									<ul>
+										<li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="icon fa-circle"></span>&nbsp;&nbsp;<a href="mailto:raphael@innerpowermentors.com">Contact the Sponsor Liaison</a></li>
+										<li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="icon fa-circle"></span>&nbsp;&nbsp;<a href="mailto:raphael@innerpowermentors.com">Registration Inquiries and Assistance</a></li>
+										<li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="icon fa-circle"></span>&nbsp;&nbsp;<a href="mailto:raphael@innerpowermentors.com">Contact for <?php echo COMPANY_NAME ; ?>  Membership</a></li>
+										<li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="icon fa-circle"></span>&nbsp;&nbsp;<a href="mailto:raphael@innerpowermentors.com">Contact for Press Inquiries</a></li>
+										<li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="icon fa-circle"></span>&nbsp;&nbsp;<a href="mailto:raphael@innerpowermentors.com">Contact for Volunteer Coordinator</a></li>
+									</ul>
+
+									<h2>Conference Program</h2>
+									<ul>
+										<li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="icon fa-circle"></span>&nbsp;&nbsp;<a href="mailto:raphael@innerpowermentors.com">Program &amp; Schedule</a></li>
+										<li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="icon fa-circle"></span>&nbsp;&nbsp;<a href="mailto:raphael@innerpowermentors.com">Program Tracks</a></li>
+										<li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="icon fa-circle"></span>&nbsp;&nbsp;<a href="mailto:raphael@innerpowermentors.com">Keynote Speakers</a></li>
+										<li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="icon fa-circle"></span>&nbsp;&nbsp;<a href="mailto:raphael@innerpowermentors.com">Special Events</a></li>
+									</ul>
+
+									<h2>Conference Sponsorship Info</h2>
+									<ul>
+										<li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="icon fa-circle"></span>&nbsp;&nbsp;<a href="docs/SponsorshipPortfolio.pdf" target="_blank">Download the Sponsorship Portfolio</a></li>
+										<li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="icon fa-circle"></span>&nbsp;&nbsp;<a href="docs/SponsorshipAgreement.pdf" target="_blank">Download the Sponsor's Pledge form</a></li>
+										<li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="icon fa-circle"></span>&nbsp;&nbsp;<a href="sponsors.php#contactToEnq">Inquire about Sponsorship</a></li>
+									</ul>
+								</p>
+							</section>
+						</div>
+					</section>
+
+
 			</article>
 
 		<!-- Footer -->

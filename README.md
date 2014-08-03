@@ -1,1 +1,1 @@
-Website Live @ http://www.innerpowerclub.com/
+Website Live @ http://www.innerpowermentors.com/

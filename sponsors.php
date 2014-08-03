@@ -1,11 +1,17 @@
 <?php
     ob_start();
 	session_start();
-	$_SESSION['page'] = "SPONSOR" ;
+	$_SESSION['page'] = "SPONSORS" ;
   	include('commonHtmlHead.html');
+  	require_once('CommonConstants.php');
   	// require_once('resources/dbconfig.php');
 ?>
 	<body class="no-sidebar loading">
+
+		<div id="showAlways" style="padding:0px;margin:0px;position: fixed ; bottom:0px; right:0px; z-index:5000;">
+			<!-- <a href="index.php#askQuery" class="scrolly"><img style="width:80%;" src="images/post_your_query.png" /></a> -->
+			<a href="postQuery.php" style="padding:5px 10px; background-color:rgba(0,0,0,1);color:#f1f1f1;">Post your queries&nbsp;&nbsp;<span class="icon fa-question-circle"></span></a>
+		</div>
 	
 		<!-- Header -->
 			<?php
@@ -27,12 +33,12 @@
 								<section>
 									
 									<header id="aboutEventToSponsor">
-										<h2>About &#8220;Inner Power - Unlock the Power Within&#8221;</h2>
+										<h2>About &#8220;<?php echo EVENT_NAME ; ?>&#8221;</h2>
 									</header>
 									<p>It is an open event for passionate entrepreneurs, professionals and those looking forward to take charge of their lives. It includes a series of workshop segments and key-note speeches by inspirational achievers and thought leaders from various fields.</p>
 									<p>
 										<ul class="buttons">
-											<li><a href="#" class="button special">Know More about Event</a></li>
+											<li><a href="event_ip_utpw.php" class="button special">Know More about Event</a></li>
 										</ul>
 									</p>
 
@@ -125,7 +131,7 @@
 															<li>Twitter Posts</li>
 															<li>Small size Logo on website</li>
 															<li>X</li>
-															<li>4 discounted tickets</li>
+															<li>1 Free Invites</li>
 															<li>X</li>
 															<li>X</li>
 															<li>X</li>
@@ -162,9 +168,9 @@
 															<li>X</li>
 															<li>X</li>
 															<li>X</li>
-															<li>X</li>
+															<li>Publicity during event sessions</li>
 															<li>Logo on program handouts</li>
-															<li>X</li>
+															<li>Participant Bag</li>
 														</ul>
 
 													</div>
@@ -236,7 +242,7 @@
 									<p>Sponsors participate on the understanding that:</p>
 									<p>
 										<ul>
-											<li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="icon fa-check-square-o"></span>&nbsp;&nbsp;By returning the signed Sponsorship Agreement (“Agreement”), you agree to be a non-exclusive Sponsor of Inner Power for the Inner power workshop – Sep 26th to 28th @ The Holiday Inn, GOA on the following terms and conditions set out below. ( <a href="docs/SponsorshipAgreement.pdf" target="_blank">Download Sponsorship Agreement </a></li>
+											<li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="icon fa-check-square-o"></span>&nbsp;&nbsp;By returning the signed Sponsorship Agreement (“Agreement”), you agree to be a non-exclusive Sponsor of <?php echo COMPANY_NAME ; ?> for the Inner power workshop – Sep 26th to 28th @ The Holiday Inn, GOA on the following terms and conditions set out below. ( <a href="docs/SponsorshipAgreement.pdf" target="_blank">Download Sponsorship Agreement </a></li>
 											<br>
 											<li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="icon fa-check-square-o"></span>&nbsp;&nbsp;Upon receipt of your signed Agreement together with payment for the deposit, acknowledgment of receipt will be sent in writing with a Tax Invoice.</li>
 											<br>
@@ -267,7 +273,7 @@
 											<br>
 											<li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="icon fa-check-square-o"></span>&nbsp;&nbsp;Delegates list. The names of sponsorship delegation members should be pre informed to us due to limited seats.</li>
 											<br>
-											<li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="icon fa-check-square-o"></span>&nbsp;&nbsp;A sponsorship company won’t be considered to constitute a partnership, joint venture or agency relationship with Inner Power.</li>
+											<li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="icon fa-check-square-o"></span>&nbsp;&nbsp;A sponsorship company won’t be considered to constitute a partnership, joint venture or agency relationship with <?php echo COMPANY_NAME ; ?></li>
 
 
 										</ul>
@@ -276,7 +282,7 @@
 									<header id="contactToEnq">
 										<h2>Contact to Enquire</h2>
 									</header>
-									<p>Contact @ <a href="mailto:raphael@innerpowerclub.com">raphael@innerpowerclub.com</a></p>
+									<p>Contact @ <a href="mailto:raphael@innerpowermentors.com">raphael@innerpowermentors.com</a></p>
 									<p>Also, you can visit <a href="contact.php">Contact Page</a> to enquire in more ways.</p>
 									
 								</section>

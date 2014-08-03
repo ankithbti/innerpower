@@ -3,9 +3,15 @@
 	session_start();
 	$_SESSION['page'] = "ABOUT" ;
   	include('commonHtmlHead.html');
+  	require_once('CommonConstants.php');
   	// require_once('resources/dbconfig.php');
 ?>
 	<body class="no-sidebar loading">
+
+		<div id="showAlways" style="padding:0px;margin:0px;position: fixed ; bottom:0px; right:0px; z-index:5000;">
+			<!-- <a href="index.php#askQuery" class="scrolly"><img style="width:80%;" src="images/post_your_query.png" /></a> -->
+			<a href="postQuery.php" style="padding:5px 10px; background-color:rgba(0,0,0,1);color:#f1f1f1;">Post your queries&nbsp;&nbsp;<span class="icon fa-question-circle"></span></a>
+		</div>
 	
 		<!-- Header -->
 			<?php
@@ -13,10 +19,16 @@
 			?>
 		
 		<!-- Main -->
-			<article id="main">
+			<article id="">
 
-				<header class="special container">
+				<section id="banner" style="padding-bottom:10px;padding-top:10px;">
+						<div class="wrapper container" style="padding-bottom:30px;margin-bottom:10px;">
+						</div>
+					</section>
+
+				<header class="special container" style="">
 					<span class="icon"><img src="images/ip_logo_small.png"/></span>
+					<br><br>
 					<!-- <h2>Unlock the <strong>power</strong> within</h2> -->
 					<p>&#8220;Deep within man dwell those slumbering powers that would astonish him,<br>
 					that he never dreams of possessing;
@@ -30,22 +42,47 @@
 						<!-- Content -->
 							<div class="content">
 								<section>
-									<p align="center"><img src="images/ip_logo_big_white.png" alt="" /></p>
+									<!-- <p align="center"><img src="images/ip_logo_big_white.png" alt="" /></p> -->
 									<header>
 										<h2>About Us</h2>
 									</header>
-									<p>Inner Power is an inspiration company, our motto is to awaken the passions, the dreams and aspiration that might lie dormant within us, to unleash that power within us and script a grand success journey in our lives.</p>
+									<p><strong><?php echo COMPANY_NAME ; ?></strong> is an inspiration company, our motto is to awaken the passions, the dreams and aspiration that might lie dormant within us, to unleash that power within us and script a grand success journey in our lives.</p>
+									<p>
+										We are a Training Company whose belief is to tap the Incredible Power that lies within us to achieve our Peak Potentials in life.  To achieve this we are associated with world class mentors, coaches.
+										We believe in the importance of leadership and personal belief management in today’s constant evolving business industry and the need for overcoming our internal bondages and blockages to accelerate success.
+									</p>
+									<p>
+										We believe in the importance of leadership and personal belief management in today’s constant evolving business industry and the need for overcoming our internal bondages and blockages to accelerate success.
+									</p>
+
+
+									<header>
+										<h2>Our Mission</h2>
+									</header>
+									<p>
+										<ul>
+											<li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="icon fa-rocket"></span>&nbsp;&nbsp;&nbsp;&nbsp;Inspiring Peak Performance</li>
+											<li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="icon fa-rocket"></span>&nbsp;&nbsp;&nbsp;&nbsp;Developing positive attitude towards life</li>
+											<li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="icon fa-rocket"></span>&nbsp;&nbsp;&nbsp;&nbsp;Empowering Vision, Passion and Goals</li>
+											<li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="icon fa-rocket"></span>&nbsp;&nbsp;&nbsp;&nbsp;Self-Leadership</li>
+											<li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="icon fa-rocket"></span>&nbsp;&nbsp;&nbsp;&nbsp;Adaption to change</li>
+											<li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="icon fa-rocket"></span>&nbsp;&nbsp;&nbsp;&nbsp;Holistic Growth</li>
+											<li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="icon fa-rocket"></span>&nbsp;&nbsp;&nbsp;&nbsp;Emotional Management</li>
+											<li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="icon fa-rocket"></span>&nbsp;&nbsp;&nbsp;&nbsp;Overcoming limited beliefs and strengthen inner belief</li>
+										</ul>
+									</p>
+
 
 									<header>
 										<h2>Our Services</h2>
 									</header>
 									<p>
 										<ul>
-											<li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="icon fa-fire"></span>&nbsp;&nbsp;One day workshops</li>
-											<li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="icon fa-flag-o"></span>&nbsp;&nbsp;Events</li>
-											<li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="icon fa-cogs"></span>&nbsp;&nbsp;Weekend workshops</li>
-											<li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="icon fa-gift"></span>&nbsp;&nbsp;Complimentary/Freebie Offers</li>
-											<li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="icon fa-users"></span>&nbsp;&nbsp;Forum: You Ask &amp; Our experts Answer!</li>
+											<li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="icon fa-fire"></span>&nbsp;&nbsp;&nbsp;&nbsp;One day workshops</li>
+											<li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="icon fa-flag-o"></span>&nbsp;&nbsp;&nbsp;&nbsp;Events</li>
+											<li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="icon fa-cogs"></span>&nbsp;&nbsp;&nbsp;&nbsp;Weekend workshops</li>
+											<li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="icon fa-gift"></span>&nbsp;&nbsp;&nbsp;&nbsp;Complimentary/Freebie Offers</li>
+											<li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="icon fa-users"></span>&nbsp;&nbsp;&nbsp;&nbsp;Forum: You Ask &amp; Our experts Answer!</li>
 										</ul>
 									</p>
 
@@ -54,14 +91,14 @@
 									</header>
 									<p>
 										<ul>
-											<li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="icon fa-flask"></span>&nbsp;&nbsp;Rekindling Passion</li>
-											<li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="icon fa-flask"></span>&nbsp;&nbsp;Teen Empowerment</li>
-											<li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="icon fa-flask"></span>&nbsp;&nbsp;Emotional Management</li>
-											<li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="icon fa-flask"></span>&nbsp;&nbsp;Energy Management</li>
-											<li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="icon fa-flask"></span>&nbsp;&nbsp;Influential Communication</li>
-											<li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="icon fa-flask"></span>&nbsp;&nbsp;Leadership</li>
-											<li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="icon fa-flask"></span>&nbsp;&nbsp;Journey of Journals</li>
-											<li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="icon fa-flask"></span>&nbsp;&nbsp;EFT – tap into to your power </li>
+											<li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="icon fa-flask"></span>&nbsp;&nbsp;&nbsp;&nbsp;Rekindling Passion</li>
+											<li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="icon fa-flask"></span>&nbsp;&nbsp;&nbsp;&nbsp;Teen Empowerment</li>
+											<li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="icon fa-flask"></span>&nbsp;&nbsp;&nbsp;&nbsp;Emotional Management</li>
+											<li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="icon fa-flask"></span>&nbsp;&nbsp;&nbsp;&nbsp;Energy Management</li>
+											<li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="icon fa-flask"></span>&nbsp;&nbsp;&nbsp;&nbsp;Influential Communication</li>
+											<li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="icon fa-flask"></span>&nbsp;&nbsp;&nbsp;&nbsp;Leadership</li>
+											<li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="icon fa-flask"></span>&nbsp;&nbsp;&nbsp;&nbsp;Journey of Journals</li>
+											<li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="icon fa-flask"></span>&nbsp;&nbsp;&nbsp;&nbsp;EFT – tap into to your power </li>
 										</ul>
 									</p>
 								</section>
@@ -195,11 +232,11 @@
 										<li><span class="icon fa-hand-o-right"></span>&nbsp;&nbsp;Most of us feel the need for the right kind of mentorship at some points in our lives.</li>
 										<li><span class="icon fa-hand-o-right"></span>&nbsp;&nbsp;We may feel the need to clarify some important questions/doubts in different areas of our professional/personal lives.</li>
 										<li><span class="icon fa-hand-o-right"></span>&nbsp;&nbsp;It is important that we get the right support from the right sources.</li>
-										<li><span class="icon fa-hand-o-right"></span>&nbsp;&nbsp;Team Inner Power is happy to facilitate this for anyone who wishes to get such support.</li>
+										<li><span class="icon fa-hand-o-right"></span>&nbsp;&nbsp;Team at <?php echo COMPANY_NAME ; ?> is happy to facilitate this for anyone who wishes to get such support.</li>
 										<li><span class="icon fa-hand-o-right"></span>&nbsp;&nbsp;“Forum” (where we virtually connect you to expert trainers/coaches online) is the right place for you.</li>
 										<li><span class="icon fa-hand-o-right"></span>&nbsp;&nbsp;You can send us your queries on professional/personal areas where you seem to face challenges on the path to success.</li>
 										<li><span class="icon fa-hand-o-right"></span>&nbsp;&nbsp;We have a panel of Certified Professional Coaches, NLP trainers, Entrepreneurs, Senior Corporate Trainers on our panel. They are excited to take your questions online and share their expertise with you!</li>
-										<li><span class="icon fa-hand-o-right"></span>&nbsp;&nbsp;The questions should be relevant to the services offered by Inner Power.</li>
+										<li><span class="icon fa-hand-o-right"></span>&nbsp;&nbsp;The questions should be relevant to the services offered by <?php echo COMPANY_NAME ; ?>.</li>
 										<li><span class="icon fa-hand-o-right"></span>&nbsp;&nbsp;We will answer all the queries in a weeks’ time.</li>
 
 									</ul>

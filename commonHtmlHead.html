@@ -1,11 +1,10 @@
 <!DOCTYPE HTML>
 <!--
-	innerpowerclub.com by Fitied
-	Inner Power Event
+	innerpowermentors.com by Fitied
 -->
 <html>
 	<head>
-		<title>Home | Inner Power - Unlock the power within</title>
+		<title>Inner Power Mentors</title>
 		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 		<meta name="description" content="" />
 		<meta name="keywords" content="Inner Power Unlock the power within" />
@@ -24,4 +23,159 @@
 		<!--[if lte IE 9]><link rel="stylesheet" href="css/ie/v9.css" /><![endif]-->
 		<link rel="shortcut icon" href="images/favicon.ico">
 		<link rel="stylesheet" href="css/pricing-table.css" />
+
+		<script type="text/javascript" src="https://www.google.com/jsapi?autoload={'modules':[{'name':'visualization',
+       'version':'1','packages':['timeline']}]}"></script>
+
+		<script type="text/javascript">
+			// function un_check(){
+			// for (var i = 0; i < document.frmactive.elements.length; i++) {
+			// var e = document.frmactive.elements[i];
+			// if ((e.name != 'allbox') && (e.type == 'checkbox')) {
+			// e.checked = document.frmactive.allbox.checked;
+			// }}}
+			var chk = document.getElementById("allbox");
+			function foo(){
+				for (var i = 0; i < document.frmactive.elements.length; i++) {
+					var e = document.frmactive.elements[i];
+					if(e.type == "checkbox" && e.name == "allbox"){
+						if(document.frmactive.allbox.checked){
+							for (var i = 0; i < document.frmactive.elements.length; i++) {
+								var e1 = document.frmactive.elements[i];
+								if(e1.type == "checkbox" && e1.name != "allbox"){
+									e1.checked = true ;
+								}
+							}
+						}else{
+							for (var i = 0; i < document.frmactive.elements.length; i++) {
+								var e2 = document.frmactive.elements[i];
+								if(e2.type == "checkbox" && e2.name != "allbox"){
+									e2.checked = false ;
+								}
+							}
+						}
+					}
+				}
+			   // if(checkbox.checked=true){
+			   //     alert("Checked!");
+			   //       }
+			   // else {
+			   //      alert("UnChecked!");
+			   //       }
+			}
+
+			/* To show scroll up button when scroll down */
+			var mywindow = $(window);
+			var mypos = mywindow.scrollTop();
+			var up = false;
+			var newscroll;
+			mywindow.scroll(function () {
+			    newscroll = mywindow.scrollTop();
+			    if (newscroll > mypos && !up) {
+			        $('.goToTop').css("display", "block");
+			        up = !up;
+			        console.log(up);
+			    } else if(newscroll < mypos && up) {
+			        $('.goToTop').css("display", "none");
+			        up = !up;
+			    }
+			    mypos = newscroll;
+			});
+
+
+		</script>
+
+		<!-- Google Visualization -->
+		<script type="text/javascript">
+
+			google.setOnLoadCallback(drawChart1);
+			google.setOnLoadCallback(drawChart2);
+			google.setOnLoadCallback(drawChart3);
+
+			function drawChart1() {
+
+			  var container = document.getElementById('eventDay1Chart');
+			  var chart = new google.visualization.Timeline(container);
+			  var dataTable = new google.visualization.DataTable();
+			  dataTable.addColumn({ type: 'string', id: 'Room' });
+			  dataTable.addColumn({ type: 'string', id: 'Name' });
+			  dataTable.addColumn({ type: 'date', id: 'Start' });
+			  dataTable.addColumn({ type: 'date', id: 'End' });
+			  dataTable.addRows([
+			    [ 'Day 1', 'Tea Break',       new Date(0,0,0,16,0,0),  new Date(0,0,0,16,30,0) ],
+			    [ 'Day 1', 'Registration & Getting to know each other',    new Date(0,0,0,16,30,0),  new Date(0,0,0,18,00,0) ],
+			    [ 'Day 1', 'Inner Power Intro: Adopting a proactive mindset ( By Pavan )',        new Date(0,0,0,18,0,0),  new Date(0,0,0,20,30,0) ]
+			    ]);
+
+			  var options = {
+			    timeline: { colorByRowLabel: false,
+			    			rowLabelStyle: {fontName: 'Helvetica', fontSize: 24, color: '#333' },
+			    			barLabelStyle: { fontName: 'Garamond', fontSize: 18, color: '#f1f1f1' }
+			    			}
+			  };
+
+			  chart.draw(dataTable, options);
+			}
+
+			function drawChart2() {
+
+			  var container = document.getElementById('eventDay2Chart');
+			  var chart = new google.visualization.Timeline(container);
+			  var dataTable = new google.visualization.DataTable();
+			  dataTable.addColumn({ type: 'string', id: 'Room' });
+			  dataTable.addColumn({ type: 'string', id: 'Name' });
+			  dataTable.addColumn({ type: 'date', id: 'Start' });
+			  dataTable.addColumn({ type: 'date', id: 'End' });
+			  dataTable.addRows([
+			    [ 'Day 2', 'Inaugration',       new Date(0,0,0,08,30,0),  new Date(0,0,0,09,00,0) ],
+			    [ 'Day 2', 'Leadership for Changing Times ( By Pavan )',    new Date(0,0,0,09,00,0),  new Date(0,0,0,11,00,0) ],
+			    [ 'Day 2', 'Tea Break',    new Date(0,0,0,11,00,0),  new Date(0,0,0,11,15,0) ],
+			    [ 'Day 2', 'Inner Passion ( By Prarthana )',    new Date(0,0,0,11,15,0),  new Date(0,0,0,13,00,0) ],
+			    [ 'Day 2', 'Lunch',    new Date(0,0,0,13,00,0),  new Date(0,0,0,14,00,0) ],
+			    [ 'Day 2', 'Self-Inspiration ( By Raphael )',    new Date(0,0,0,14,00,0),  new Date(0,0,0,15,30,0) ],
+			    [ 'Day 2', 'Tea Break',    new Date(0,0,0,15,30,0),  new Date(0,0,0,15,45,0) ],
+			    [ 'Day 2', 'Emotional Equations - EFT ( By Suresh )',    new Date(0,0,0,15,45,0),  new Date(0,0,0,17,15,0) ],
+			    [ 'Day 2', 'Break',    new Date(0,0,0,17,15,0),  new Date(0,0,0,17,30,0) ],
+			    [ 'Day 2', 'Coaching Culture ( By Pavan )',        new Date(0,0,0,17,30,0),  new Date(0,0,0,18,30,0) ]
+			    ]);
+
+			  var options = {
+			    timeline: { colorByRowLabel: false,
+			    			rowLabelStyle: {fontName: 'Helvetica', fontSize: 24, color: '#333' },
+			    			barLabelStyle: { fontName: 'Garamond', fontSize: 18, color: '#f1f1f1' }
+			    			}
+			  };
+
+			  chart.draw(dataTable, options);
+			}
+
+			function drawChart3() {
+
+			  var container = document.getElementById('eventDay3Chart');
+			  var chart = new google.visualization.Timeline(container);
+			  var dataTable = new google.visualization.DataTable();
+			  dataTable.addColumn({ type: 'string', id: 'Room' });
+			  dataTable.addColumn({ type: 'string', id: 'Name' });
+			  dataTable.addColumn({ type: 'date', id: 'Start' });
+			  dataTable.addColumn({ type: 'date', id: 'End' });
+			  dataTable.addRows([
+			    [ 'Day 3', 'Energy ( By Jean )',       new Date(0,0,0,08,00,0),  new Date(0,0,0,10,00,0) ],
+			    [ 'Day 3', 'Tea Break',    new Date(0,0,0,10,00,0),  new Date(0,0,0,10,15,0) ],
+			    [ 'Day 3', 'Self Care ( By Swetha )',    new Date(0,0,0,10,15,0),  new Date(0,0,0,11,00,0) ],
+			    [ 'Day 3', 'Edge - Power of Influence / Self Communication ( By Sunil )',    new Date(0,0,0,11,00,0),  new Date(0,0,0,12,30,0) ]
+			    
+			    ]);
+
+			  var options = {
+			    timeline: { colorByRowLabel: false,
+			    			rowLabelStyle: {fontName: 'Helvetica', fontSize: 24, color: '#333' },
+			    			barLabelStyle: { fontName: 'Garamond', fontSize: 18, color: '#f1f1f1' }
+			    			}
+			  };
+
+			  chart.draw(dataTable, options);
+			}
+
+		</script>
+
 	</head>

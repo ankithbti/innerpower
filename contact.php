@@ -3,13 +3,10 @@
 	session_start();
 	$_SESSION['page'] = "CONTACT" ;
   	include('commonHtmlHead.html');
-  	// require_once('resources/dbconfig.php');
-
+  	require_once('CommonConstants.php');
+  	$error = 0 ;
   	$curr_date = date(DATE_RFC822);
 	$datetime = date('Y-m-d H:i:s') ;
-
-	DEFINE('CONTACT_MAILING_LIST','raphaeljoseph14@gmail.com,ankithbti007@gmail.com,mailtosureshsivaraman@gmail.com,contact@innerpowerclub.com,raphael@innerpowerclub.com,suresh@innerpowerclub.com');
-	//DEFINE('CONTACT_MAILING_LIST','ankithbti007@gmail.com');
 
   	if(isset($_POST['submitted'])){
   		$name = $_POST['name'];
@@ -22,19 +19,19 @@
   		if( $_SESSION['security_code'] == $_POST['captcha'] && !empty($_SESSION['security_code'])) {
   				
   			$body = "<font color='gray' size='3px' face='tahoma'>";
-            $body .= "Hi Admin" . ",<br/><br/>Greetings from Inner Power Automated System.<br/><br/>";
-            $body .= " This is to inform you that person with following details, contacted Inner Power via Website contact page:<br/> " ;
+            $body .= "Hi Admin" . ",<br/><br/>Greetings from " . COMPANY_NAME . " Automated System.<br/><br/>";
+            $body .= " This is to inform you that person with following details, contacted " . COMPANY_NAME . " via Website contact page:<br/> " ;
             $body .= "<ul><li>Name:<b> " . $name . "</b></li><li>Email:<b> " . $email . 
             		"</b></li><li>Subject:<b> " . $subject . "</b></li><li>Message:<b> " . $message . "</b></li></ul>" ;
             
             
             $body .= "<br/><br/>" ;
-            $body .= "Thanks & Regards<br/><b>Inner Power</b><br/><a href='http://www.innerpowerclub.com'>www.innerpowerclub.com</a>";
+            $body .= "Thanks & Regards<br/><b>" . COMPANY_NAME . "</b><br/><a href='http://www.innerpowermentors.com/'>www.innerpowermentors.com/</a>";
             $body .= "</font>" ;
-            $from_address = "noreply@innerpowerclub.com";
+            $from_address = "noreply@innerpowermentors.com";
             $to = CONTACT_MAILING_LIST ;
-            $subject = 'Someone contacted Inner Power via website contact page at ' . $curr_date ;
-            $from_name = "Inner Power" ;
+            $subject = "Someone contacted " . COMPANY_NAME . " via website contact page at " . $curr_date ;
+            $from_name = COMPANY_NAME ;
             //text/html\r\n ||||  ."Content-Type: text/plain; charset=utf-8\r\n"
             $headers = "MIME-Version: 1.0\r\n"
               ."Content-Type: text/html\r\n"
@@ -45,15 +42,15 @@
 
             // Send Ack mail to user
             $body = "<font color='gray' size='3px' face='tahoma'>";
-            $body .= "Hello " . $name . ",<br/><br/>Greetings from <strong>Inner Power</strong><br/><br/>";
+            $body .= "Hello " . $name . ",<br/><br/>Greetings from <strong>" . COMPANY_NAME . "</strong><br/><br/>";
             $body .= " Thanks for contacting us. We will soon get in touch with you. " ;
             $body .= "<br/><br/>" ;
-            $body .= "Thanks & Regards<br/><b>Inner Power</b><br/><a href='http://www.innerpowerclub.com'>www.innerpowerclub.com</a>";
+            $body .= "Thanks & Regards<br/><b>" . COMPANY_NAME . "</b><br/><a href='http://www.innerpowermentors.com'>www.innerpowermentors.com</a>";
             $body .= "</font>" ;
-            $from_address = "noreply@innerpowerclub.com";
+            $from_address = "noreply@innerpowermentors.com";
             $to = $email ;
-            $subject = ' Acknowledgement of your message to Inner Power @ ' . $curr_date ;
-            $from_name = "Inner Power" ;
+            $subject = " Acknowledgement of your message to " . COMPANY_NAME . " @ " . $curr_date ;
+            $from_name = COMPANY_NAME ;
             //text/html\r\n ||||  ."Content-Type: text/plain; charset=utf-8\r\n"
             $headers = "MIME-Version: 1.0\r\n"
               ."Content-Type: text/html\r\n"
@@ -69,6 +66,8 @@
 
 ?>
 	<body class="no-sidebar loading">
+
+		
 	
 		<!-- Header -->
 			<?php
@@ -76,10 +75,17 @@
 			?>
 
 		<!-- Main -->
-		    <article id="main" style="background-color: #e8e8e8;">
+		    <article id="" style="background-color: #e8e8e8; color:#f1f1f1;">
+
+		    	<section id="banner" style="padding-bottom:10px;padding-top:10px;">
+						<div class="wrapper container" style="padding-bottom:30px;margin-bottom:10px;">
+						</div>
+					</section>
 		    
+		    	<section id="cta">
 				<header class="special container">
-					<span class="icon fa-heart"></span>
+					<span class="icon fa-heart-o"></span>
+					<br><br>
 					<h2>Get In Touch</h2>
 					<p>We would love to hear from you !!</p>
 				</header>
@@ -96,11 +102,11 @@
 					    	}else{
 					    		// Show Contact Form
 					    ?>
-								<section class="wrapper style4 special container small">
+								<section class="wrapper style4 special container small" style="color: #333;">
 								
 									<!-- Content -->
 										<div class="content">
-											<form method="post" target="contact.php">
+											<form method="post" action="contact.php" autocomplete="on">
 											<?php
 												if($error == 1){
 						    						// show error
@@ -206,20 +212,21 @@
 
 				<header class="special container" id="contactCall">
 					<span class="icon fa-phone"></span>
+					<br><br>
 					<h2>Call Us @</h2>
 					<p>(+91) 87921 60045</p>
 					<p>(+91) 99722 97259</p>
 				</header>
 
 				<header class="special container" id="contactEMail">
-					<span class="icon fa-envelope"></span>
+					<span class="icon fa-envelope-o"></span>
+					<br><br>
 					<h2>Mail Us @</h2>
-					<p><a href="mailto:contact@innerpowerclub.com">contact@innerpowerclub.com</a></p>
-					<p><a href="mailto:raphael@innerpowerclub.com">raphael@innerpowerclub.com</a></p>
-					<p><a href="mailto:suresh@innerpowerclub.com">raphael@innerpowerclub.com</a></p>
-					<p><a href="mailto:harsh@innerpowerclub.com">raphael@innerpowerclub.com</a></p>
-					<p><a href="mailto:gaurav@innerpowerclub.com">raphael@innerpowerclub.com</a></p>
+					<p><a href="mailto:connect@innerpowermentors.com">connect@innerpowermentors.com</a></p>
+					<p><a href="mailto:raphael@innerpowermentors.com">raphael@innerpowermentors.com</a></p>
 				</header>
+
+				</section>
 				
 			</article>
 

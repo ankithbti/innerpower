@@ -3,6 +3,7 @@
 	session_start();
 	$_SESSION['page'] = "SPEAKERS" ;
   	include('commonHtmlHead.html');
+  	require_once('CommonConstants.php');
   	// require_once('resources/dbconfig.php');
 ?>
 	<body class="no-sidebar loading">
@@ -25,11 +26,37 @@
 										<h2>SPEAKERS - TRUE MENTORS</h2>
 									</header>
 
+									<div class="row">
+										<div class="4u">
+											<a href="#pavan" class="scrolly" style="margin:0px;padding:0px;background-color:#D94E58;color:#f1f1f1;padding:5px 10px;"><img class="circle-small" src="images/pavan.png" />&nbsp;&nbsp;Pavan Bakshi</a>
+										</div>
+										<div class="4u">
+											<a href="#rajagopal" class="scrolly" style="margin:0px;padding:0px;background-color:#D94E58;color:#f1f1f1;padding:5px 10px;"><img class="circle-small" src="images/rajagopal.png" />&nbsp;&nbsp;Jean</a>
+										</div>
+										<div class="4u">
+											<a href="#sweta" class="scrolly" style="margin:0px;padding:0px;background-color:#D94E58;color:#f1f1f1;padding:5px 10px;"><img class="circle-small" src="images/sweta.png" />&nbsp;&nbsp;Shwetha Bhatia</a>
+										</div>
+									</div>
+
+									<div class="row">
+										<div class="4u">
+											<a href="#prarthana" class="scrolly" style="margin:0px;padding:0px;background-color:#D94E58;color:#f1f1f1;padding:5px 10px;"><img class="circle-small" src="images/prarthana.png" />&nbsp;&nbsp;Prarthana Prateek Kaul</a>
+										</div>
+										<div class="4u">
+											<a href="#raphael" class="scrolly" style="margin:0px;padding:0px;background-color:#D94E58;color:#f1f1f1;padding:5px 10px;"><img class="circle-small" src="images/raphael.png" />&nbsp;&nbsp;Raphael Joseph</a>
+										</div>
+										<div class="4u">
+											<a href="#suresh" class="scrolly" style="margin:0px;padding:0px;background-color:#D94E58;color:#f1f1f1;padding:5px 10px;"><img class="circle-small" src="images/suresh.png" />&nbsp;&nbsp;Suresh Sivaraman</a>
+										</div>
+									</div>
+
+									
+
 									<ul>
-										<li><span class="icon fa-angle-double-down"></span>&nbsp;&nbsp;&nbsp;&nbsp;<a href="#pavan" class="scrolly"><img class="circle-small" src="images/pavan.png" />&nbsp;&nbsp;Pavan Bakshi</a></li>
-										<li><span class="icon fa-angle-double-down"></span>&nbsp;&nbsp;&nbsp;&nbsp;<a href="#mathew" class="scrolly"><img class="circle-small" src="images/mathew.png" />&nbsp;&nbsp;Jacob Mathewis</a></li>
-										<li><span class="icon fa-angle-double-down"></span>&nbsp;&nbsp;&nbsp;&nbsp;<a href="#rajagopal" class="scrolly"><img class="circle-small" src="images/rajagopal.png" />&nbsp;&nbsp;Jeanne-d’Arc Jabbour Rajagopal</a></li>
-										<li><span class="icon fa-angle-double-down"></span>&nbsp;&nbsp;&nbsp;&nbsp;<a href="#sweta" class="scrolly"><img class="circle-small" src="images/sweta.png" />&nbsp;&nbsp;Shwetha Bhatia</a></li>
+										<li></li>
+										<li></li>
+										<li></li>
+										<li></li>
 									</ul>
 
 								</section>
@@ -93,40 +120,111 @@
 								
 					</section>
 
-					<!-- Three -->
-					<section id="mathew" class="wrapper style3 container" style="margin-top:10px; margin-bottom: 10px;">
+
+				<!-- Two -->
+					<section id="prarthana" class="wrapper style3 container" style="margin-top:10px; margin-bottom: 10px;">
 						<!-- Content -->
-							
 									
 							<div class="row">
+
 								<div class="4u" align="center">
-									<img class="circle" src="images/mathew.png"/>
-									
+									<img class="circle" src="images/prarthana.png"/>
+
 									<p></p>
 									<p>
 										<b>Areas of Expertise</b>
 										<ul align="left">
-											<li>&#8226;&nbsp;&nbsp;Business Coaching</li>
-											<li>&#8226;&nbsp;&nbsp;Leadership Coaching</li>
-											<li>&#8226;&nbsp;&nbsp;Company Restructure</li>
-											<li>&#8226;&nbsp;&nbsp;Strategic Realignment</li>
-											<li>&#8226;&nbsp;&nbsp;Six Sigma Certification</li>
-											<li>&#8226;&nbsp;&nbsp;Lean Certification</li>
-											<li>&#8226;&nbsp;&nbsp;Life Coaching</li>
-											<li>&#8226;&nbsp;&nbsp;Employee efficiency &amp; effectiveness programs</li>
+											<li>&#8226;&nbsp;&nbsp;Trainer</li>
+											<li>&#8226;&nbsp;&nbsp;Consultant</li>
+											<li>&#8226;&nbsp;&nbsp;Visionary Social Entrepreneur</li>
 										</ul>
 									</p>
-									
 
 								</div>
-								<div class="8u" align="left" style="text-align: justify;">
-									<h2>Jacob Mathewis</h2>
+
+								<div class="8u" align="right" style="text-align: justify;">
+									<h2>Prarthana Prateek Kaul</h2>
+
 									<p>
-										<strong>Jacob Mathewis</strong> an innovative coach &amp; an effective Change Practitioner, with extensive experience in business optimisation and transformational coaching. A Certified Six Sigma Master Black Belt and Lean Practitioner from the United States, Jacob has completed over 700 projects in the Asia Pacific Region. Jacob has over 60,000 hours of rich experience as a Change Practitioner across Asia, Australia &amp; New Zealand. The people who have received training and coaching from Jacob have learnt from the true-life examples &amp; experiences of organisations and people that have successfully used transformational techniques to change their lives and achieve their life goals. Jacob is also a NLP Certified Trainer and a Master Business Coach. He uses tried and tested methodologies that integrate People (Coaching), Processes (Six Sigma, TRIZ &amp; Lean) amp; Values (NLP ,TLT &amp; Psychosomatic). This creates a lasting change on people and organisations. Jacob has trained over 750 Six Sigma Practitioners (Green and Black Belts) across Australia, New Zealand, Malaysia &amp; Indonesia. He also has extensive experience in implementing Six Sigma culture throughout organisations and has trained and mentored Yellow, Green and Black Belts across industries like Banking, FMCG, Logistics, Distribution, Manufacturing, FMCG, IT, Food , Retailing, Multi Level Marketing &amp; Luxury Goods.
+										<strong>Prarthana Prateek Kaul</strong> is Visionary Social Entrepreneur, Trainer &amp; Consultant.
+										<br>She is founder of Giftabled (an inclusive gift store).
+										<br>Guest Speaker at different institutes including IIT Chennai, IIMB, NMIMS, TISS.
+										<br>
+										Consultant and Trainer – Rediscover your passion, Volunteering, Disability Awareness.
+										<br>
+										She has 10 years of extensive NGO &amp; Volunteering  Experience in India:
+										<ul align="left">
+											<li>&#8226;&nbsp;&nbsp;Regional Head – East and South at iVolunteer for 8 years.</li>
+											<li>&#8226;&nbsp;&nbsp;On Board of Om Ashram, an Old Age Home in Bangalore.</li>
+											<li>&#8226;&nbsp;&nbsp;Trained in using “Basic Sign language” and “Basic Uncontracted Braille”</li>
+											<li>&#8226;&nbsp;&nbsp;Chemoprevention: Cancer management.</li>
+											<li>&#8226;&nbsp;&nbsp;Endocrine and metabolic disorders: Diabetes and obesity management</li>
+											<li>&#8226;&nbsp;&nbsp;Exercise physiology and sports nutrition</li>
+											<li>&#8226;&nbsp;&nbsp;Cardiac disorders</li>
+											<li>&#8226;&nbsp;&nbsp;Kidney disorders</li>
+										</ul>
 									</p>
 
 									<p>
-										Jacob is a MBA Business Graduate (Hons) from New Zealand. He has been certified by the American Board of NeuroLinguistic Programming, American Board of Hypnotherapy and the TimeLine Therapy Association. Based at Sydney, <strong>he is one of the few Six Sigma Master Black Belts in the world that combines techniques and flavours of TRIZ, NLP, Six Sigma , Lean &amp; Psychosomatic.</strong>
+										She did PGDBA (Finance) from Symbiosys Centre for Distance Learning.
+										<br>
+										Worked as Sr. Procurement Specialist in IBM.
+									</p>
+
+								</div>
+								
+								
+							</div>
+
+								
+					</section>
+
+					
+				
+
+				<!-- Three -->
+					<section id="sweta" class="wrapper style3 container" style="margin-top:10px; margin-bottom: 0px;">
+						<!-- Content -->
+
+							<div class="row">
+								
+								<div class="8u" align="left" style="text-align: justify;">
+									<h2>Shwetha Bhatia</h2>
+
+									<p>
+										<strong>Shwetha Bhatia</strong> is a registered dietician with the Indian Dietetic Association. She specialises in clinical and sports nutrition. A University topper at the graduation and post graduation level in Dietetics, Shwetha’s academic excellence is superseded by her successful and established clinical practice under the brand name ‘Metamorphosis’. She firmly believes that ‘Prevention is Cheaper than Cure’. In today’s fast paced life, health care management is becoming increasingly important. We are constantly striving to expand our horizons at work. Fitness is directly proportional to peak performance. Therefore, today she is going to focus on Self care and energy management which will yield peak performance.
+									</p>
+
+									<p>
+										Disease comes with decreased productivity and increased burden of medical cost. The concept of ‘counting calories to achieve your ideal body weight’ is outdated. Your body composition (muscle-to-fat ratio), determines your risk for disease and is the best indicator of how healthy you are.
+									</p>
+
+									<p>
+										Ideal BODY COMPOSITION can be achieved at any age BUT only through a structured exercise plan and nutrition which supports it. Walking / yoga may not be enough.
+									</p>
+
+									<p>
+										To understand more about the scientific approach towards EFFECTIVE HEALTH MANAGEMENT, be a part of the interactive session with Shwetha.
+									</p>
+								</div>
+
+								<div class="4u" align="center">
+									<img class="circle" src="images/sweta.png"/>
+
+									<p></p>
+									<p>
+										<b>Areas of Expertise</b>
+										<ul align="right">
+											<li>&#8226;&nbsp;&nbsp;Nutritional advice across all age groups: children/teenagers/adults/older population</li>
+											<li>&#8226;&nbsp;&nbsp;Gastrointestinal disorders; including liver and pancreatic disorders</li>
+											<li>&#8226;&nbsp;&nbsp;Post and ante natal care: Dietary modifications during pregnancy and lactation</li>
+											<li>&#8226;&nbsp;&nbsp;Chemoprevention: Cancer management.</li>
+											<li>&#8226;&nbsp;&nbsp;Endocrine and metabolic disorders: Diabetes and obesity management</li>
+											<li>&#8226;&nbsp;&nbsp;Exercise physiology and sports nutrition</li>
+											<li>&#8226;&nbsp;&nbsp;Cardiac disorders</li>
+											<li>&#8226;&nbsp;&nbsp;Kidney disorders</li>
+
+										</ul>
 									</p>
 
 								</div>
@@ -134,13 +232,31 @@
 	
 					</section>
 
-				<!-- Two -->
+
+					<!-- Two -->
 					<section id="rajagopal" class="wrapper style3 container" style="margin-top:10px; margin-bottom: 10px;">
 						<!-- Content -->
 							
 									
 							<div class="row">
-								<div class="8u" align="left" style="text-align: justify;">
+
+								<div class="4u" align="center">
+									<img class="circle" src="images/rajagopal.png"/>
+
+									<p></p>
+									<p>
+										<b>Areas of Expertise</b>
+										<ul align="left">
+											<li>&#8226;&nbsp;&nbsp;A Pranic Healer, Pranic Healing Instructor and Arhatic Yoga® practitioner.</li>
+											<li>&#8226;&nbsp;&nbsp;BA in Sociology with Minor in Psychology and MBA in Marketing from the American University in Dubai.</li>
+											<li>&#8226;&nbsp;&nbsp;Over 9 years’ experience in the Corporate World, where she has worked with Nestlé, a fortune 50 MNC in various positions of Sales, Marketing, Project Management and Green Field Projects, handling MENA and Iran.</li>
+											<li>&#8226;&nbsp;&nbsp;An Entrepreneur, working on integrating and balancing business and spirituality.</li>
+										</ul>
+									</p>
+
+								</div>
+
+								<div class="8u" align="right" style="text-align: justify;">
 									<h2>Jeanne-d’Arc Jabbour Rajagopal</h2>
 
 									<p>
@@ -176,75 +292,107 @@
 									</p>
 
 								</div>
-								<div class="4u" align="center">
-									<img class="circle" src="images/rajagopal.png"/>
-
-									<p></p>
-									<p>
-										<b>Areas of Expertise</b>
-										<ul align="right">
-											<li>&#8226;&nbsp;&nbsp;A Pranic Healer, Pranic Healing Instructor and Arhatic Yoga® practitioner.</li>
-											<li>&#8226;&nbsp;&nbsp;BA in Sociology with Minor in Psychology and MBA in Marketing from the American University in Dubai.</li>
-											<li>&#8226;&nbsp;&nbsp;Over 9 years’ experience in the Corporate World, where she has worked with Nestlé, a fortune 50 MNC in various positions of Sales, Marketing, Project Management and Green Field Projects, handling MENA and Iran.</li>
-											<li>&#8226;&nbsp;&nbsp;An Entrepreneur, working on integrating and balancing business and spirituality.</li>
-										</ul>
-									</p>
-
-								</div>
+								
 								
 							</div>
 
 								
 					</section>
 
-				<!-- Three -->
-					<section id="sweta" class="wrapper style3 container" style="margin-top:10px; margin-bottom: 0px;">
+
+					<!-- Three -->
+					<section id="raphael" class="wrapper style3 container" style="margin-top:10px; margin-bottom: 0px;">
 						<!-- Content -->
-							
-									
+		
 							<div class="row">
-								<div class="4u" align="center">
-									<img class="circle" src="images/sweta.png"/>
-
-									<p></p>
-									<p>
-										<b>Areas of Expertise</b>
-										<ul align="left">
-											<li>&#8226;&nbsp;&nbsp;Nutritional advice across all age groups: children/teenagers/adults/older population</li>
-											<li>&#8226;&nbsp;&nbsp;Gastrointestinal disorders; including liver and pancreatic disorders</li>
-											<li>&#8226;&nbsp;&nbsp;Post and ante natal care: Dietary modifications during pregnancy and lactation</li>
-											<li>&#8226;&nbsp;&nbsp;Chemoprevention: Cancer management.</li>
-											<li>&#8226;&nbsp;&nbsp;Endocrine and metabolic disorders: Diabetes and obesity management</li>
-											<li>&#8226;&nbsp;&nbsp;Exercise physiology and sports nutrition</li>
-											<li>&#8226;&nbsp;&nbsp;Cardiac disorders</li>
-											<li>&#8226;&nbsp;&nbsp;Kidney disorders</li>
-
-										</ul>
-									</p>
-
-								</div>
+								
 								<div class="8u" align="left" style="text-align: justify;">
-									<h2>Shwetha Bhatia</h2>
+									<h2>RAPHAEL JOSEPH</h2>
 
 									<p>
-										<strong>Shwetha Bhatia</strong> is a registered dietician with the Indian Dietetic Association. She specialises in clinical and sports nutrition. A University topper at the graduation and post graduation level in Dietetics, Shwetha’s academic excellence is superseded by her successful and established clinical practice under the brand name ‘Metamorphosis’. She firmly believes that ‘Prevention is Cheaper than Cure’. In today’s fast paced life, health care management is becoming increasingly important. We are constantly striving to expand our horizons at work. Fitness is directly proportional to peak performance. Therefore, today she is going to focus on Self care and energy management which will yield peak performance.
+										<strong>(ORGANIZER) &amp; FOUNDER, INNER POWER TRAINING SOLUTIONS</strong>
 									</p>
 
 									<p>
-										Disease comes with decreased productivity and increased burden of medical cost. The concept of ‘counting calories to achieve your ideal body weight’ is outdated. Your body composition (muscle-to-fat ratio), determines your risk for disease and is the best indicator of how healthy you are.
+										Corporate Trainer in Leadership, Behavioural &amp; Sales with varied industrial experience; Organizes open workshops with Times of India group.
 									</p>
 
 									<p>
-										Ideal BODY COMPOSITION can be achieved at any age BUT only through a structured exercise plan and nutrition which supports it. Walking / yoga may not be enough.
+										Previously worked as Asst. Team lead in Technicolor India; worked on games such as Tomb Raider, Max Pyan, Hitman, L.A.Noire, series such as How to Train your dragon, Kumfu Panda. Star Performer of Gaming unit.
 									</p>
 
 									<p>
-										To understand more about the scientific approach towards EFFECTIVE HEALTH MANAGEMENT, be a part of the interactive session with Shwetha.
+										Guest Lecturer; Actively partnered as Mentor for ‘Arena Multimedia’ and ‘Image Multimedia’.
 									</p>
+									<p>
+										Collaborated with YMCA in organizing youth camps, and drug de -addiction camps. 
+										Organized youth empowerment programs.
+									</p>
+								</div>
+
+								<div class="4u" align="center">
+									<img class="circle" src="images/raphael.png"/>
 								</div>
 							</div>
 	
 					</section>
+
+
+					<!-- Two -->
+					<section id="suresh" class="wrapper style3 container" style="margin-top:10px; margin-bottom: 10px;">
+						<!-- Content -->
+							
+									
+							<div class="row">
+
+								<div class="4u" align="center">
+									<img class="circle" src="images/suresh.png"/>
+								</div>
+
+								<div class="8u" align="right" style="text-align: justify;">
+									<h2>SURESH SIVARAMAN</h2>
+
+									<p>
+										<strong>(ORGANIZER)</strong>
+									</p>
+
+									<p>
+										Founder, Elan Tattva; Co-Founder, Inner Power Training Solutions.
+									</p>
+
+									<p>
+										Certified Coach from Neuro Leadership Group.
+									</p>
+
+									<p>
+										Certified NLP Trainer &amp; Life Coach (ANLP).
+									</p>
+
+									<p>
+										Over 16 years of corporate experience.
+									</p>
+
+									<p>
+										Extensive work experience in India and Europe.
+									</p>
+
+									<p>
+										Worked as Delivery Manager in Wipro Technologies.
+									</p>
+
+									<p>
+										MBA (PGSEM) from IIM Bangalore.
+									</p>
+
+								</div>
+								
+								
+							</div>
+
+								
+					</section>
+
+				
 
 			</article>
 
